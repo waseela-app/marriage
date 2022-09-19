@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Waseela</title>
+	<link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo-area">
+            <img src="images/logo.png" alt=""/>
+            <div>
+                <h2>الأسرة السعيدة</h2>
+                <h3>للتوفيق بين الأزواج</h3>
+            </div>
+        </div>
+        <div class="header-content">
+            <a href="#">عن المنصة</a>
+            <a href="#">الاشتراك</a>
+            <a href="#">الأسئلة الشائعة</a>
+            <a href="#">اتصل بنا</a>
+            <div class="icons">
+                <img src="images/search.png" alt=""/>
+            </div>
+            <div>
+                <a href="">
+                    <button class="login">تسجيل دخول</button>
+                </a>
+                <a href="">
+                    <button class="logout">سجل مجانا</button>
+                </a>
+            </div>
+            <i onclick="mobileMenu()" class="fa-solid fa-bars"></i>
+        </div>
+        <div class="mobile-menu">
+            <div class="d-flex align-items-center">
+                <a href="">
+                    <button class="login">تسجيل دخول</button>
+                </a>
+                <a href="">
+                    <button class="logout">سجل مجانا</button>
+                </a>
+            </div>
+            <a href="#">عن المنصة</a>
+            <a href="#">الاشتراك</a>
+            <a href="#">الأسئلة الشائعة</a>
+            <a href="#">اتصل بنا</a>
+        </div>
+    </div><!-- start body -->
+    <div class="body">
+        <div class="section profile-container">
+            <div class="profile-bottom">
+                <h2>انتقل الى الإرشادات<br/> والنصائح</h2>
+                <div>
+                    <img src="images/arrow-left.png" alt=""/>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-column gap-5 main">
+            <div class="section date-container">
+                <div>
+                    <h2>الجمعة 25 فبراير</h2>
+                    <h1>مساء الخير</h1>
+                </div>
+                <img src="images/plane.png" alt=""/>
+            </div>
+            <div class="section users-container">
+                <form>
+                    <div class="search-container">
+                        <div class="search-area">
+                            <div>
+                                <select name="sex">
+                                    <option value="null" hidden>الجنس</option>
+                                    <option value="male">ذكر</option>
+                                    <option value="female">أنثى</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select name="nationality">
+                                    <option value="null" hidden>الجنسية</option>
+                                    <option value="a">a</option>
+                                    <option value="b">b</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select name="city">
+                                    <option value="null" hidden>المدينة</option>
+                                    <option value="a">a</option>
+                                    <option value="b">b</option>
+                                </select>
+                            </div>
+                            <div class="time-container">
+                                <h2>من</h2>
+                                <input type="number" value="18"/>
+                                <h2>الى</h2>
+                                <input type="number" value="26"/>
+                            </div>
+                            <div>
+                                <h2>بحث</h2>
+                            </div>
+                        </div>
+                        <button type="submit">بحث متقدم</button>
+                    </div>
+                </form><!--start users -->
+                <div class="users-area">
+                    <div>
+                        <div class="user">
+                            <div class="user-profile">
+                                <div class="img-border">
+                                    <img class="blur" src="images/man.png" alt=""/>
+                                </div>
+                                <div>
+                                    <h1>سعيدة احمد</h1>
+                                    <h2>سعاد حميد</h2>
+                                </div>
+                            </div>
+                            <div class="user-details">
+                                <img src="images/global.png" alt=""/>
+                                <h2>السعودية</h2>
+                                <img src="images/calendar.png" alt=""/>
+                                <h2>25 عام</h2>
+                                <img src="images/location.png" alt=""/>
+                                <h2>جدة</h2>
+                            </div>
+                            <button>عرض الملف الشخصي</button>
+                        </div>
+                        <div class="user">
+                            <div class="user-profile">
+                                <div class="img-border">
+                                    <img class="blur" src="images/man.png" alt=""/>
+                                </div>
+                                <div>
+                                    <h1>سعيدة احمد</h1>
+                                    <h2>سعاد حميد</h2>
+                                </div>
+                            </div>
+                            <div class="user-details">
+                                <img src="images/global.png" alt=""/>
+                                <h2>السعودية</h2>
+                                <img src="images/calendar.png" alt=""/>
+                                <h2>25 عام</h2>
+                                <img src="images/location.png" alt=""/>
+                                <h2>جدة</h2>
+                            </div>
+                            <button>عرض الملف الشخصي</button>
+                        </div>
+                        <div class="user">
+                            <div class="user-profile">
+                                <div class="img-border">
+                                    <img class="blur" src="images/man.png" alt=""/>
+                                </div>
+                                <div>
+                                    <h1>سعيدة احمد</h1>
+                                    <h2>سعاد حميد</h2>
+                                </div>
+                            </div>
+                            <div class="user-details">
+                                <img src="images/global.png" alt=""/>
+                                <h2>السعودية</h2>
+                                <img src="images/calendar.png" alt=""/>
+                                <h2>25 عام</h2>
+                                <img src="images/location.png" alt=""/>
+                                <h2>جدة</h2>
+                            </div>
+                            <button>عرض الملف الشخصي</button>
+                        </div>
+                        <div class="user">
+                            <div class="user-profile">
+                                <div class="img-border">
+                                    <img class="blur" src="images/man.png" alt=""/>
+                                </div>
+                                <div>
+                                    <h1>سعيدة احمد</h1>
+                                    <h2>سعاد حميد</h2>
+                                </div>
+                            </div>
+                            <div class="user-details">
+                                <img src="images/global.png" alt=""/>
+                                <h2>السعودية</h2>
+                                <img src="images/calendar.png" alt=""/>
+                                <h2>25 عام</h2>
+                                <img src="images/location.png" alt=""/>
+                                <h2>جدة</h2>
+                            </div>
+                            <button>عرض الملف الشخصي</button>
+                        </div>
+                        <div class="user">
+                            <div class="user-profile">
+                                <div class="img-border">
+                                    <img class="blur" src="images/man.png" alt=""/>
+                                </div>
+                                <div>
+                                    <h1>سعيدة احمد</h1>
+                                    <h2>سعاد حميد</h2>
+                                </div>
+                            </div>
+                            <div class="user-details">
+                                <img src="images/global.png" alt=""/>
+                                <h2>السعودية</h2>
+                                <img src="images/calendar.png" alt=""/>
+                                <h2>25 عام</h2>
+                                <img src="images/location.png" alt=""/>
+                                <h2>جدة</h2>
+                            </div>
+                            <button>عرض الملف الشخصي</button>
+                        </div>
+                        <div class="user">
+                            <div class="user-profile">
+                                <div class="img-border">
+                                    <img class="blur" src="images/man.png" alt=""/>
+                                </div>
+                                <div>
+                                    <h1>سعيدة احمد</h1>
+                                    <h2>سعاد حميد</h2>
+                                </div>
+                            </div>
+                            <div class="user-details">
+                                <img src="images/global.png" alt=""/>
+                                <h2>السعودية</h2>
+                                <img src="images/calendar.png" alt=""/>
+                                <h2>25 عام</h2>
+                                <img src="images/location.png" alt=""/>
+                                <h2>جدة</h2>
+                            </div>
+                            <button>عرض الملف الشخصي</button>
+                        </div>
+                        <div class="user">
+                            <div class="user-profile">
+                                <div class="img-border">
+                                    <img class="blur" src="images/man.png" alt=""/>
+                                </div>
+                                <div>
+                                    <h1>سعيدة احمد</h1>
+                                    <h2>سعاد حميد</h2>
+                                </div>
+                            </div>
+                            <div class="user-details">
+                                <img src="images/global.png" alt=""/>
+                                <h2>السعودية</h2>
+                                <img src="images/calendar.png" alt=""/>
+                                <h2>25 عام</h2>
+                                <img src="images/location.png" alt=""/>
+                                <h2>جدة</h2>
+                            </div>
+                            <button>عرض الملف الشخصي</button>
+                        </div>
+                        <div class="user">
+                            <div class="user-profile">
+                                <div class="img-border">
+                                    <img class="blur" src="images/man.png" alt=""/>
+                                </div>
+                                <div>
+                                    <h1>سعيدة احمد</h1>
+                                    <h2>سعاد حميد</h2>
+                                </div>
+                            </div>
+                            <div class="user-details">
+                                <img src="images/global.png" alt=""/>
+                                <h2>السعودية</h2>
+                                <img src="images/calendar.png" alt=""/>
+                                <h2>25 عام</h2>
+                                <img src="images/location.png" alt=""/>
+                                <h2>جدة</h2>
+                            </div>
+                            <button>عرض الملف الشخصي</button>
+                        </div>
+                        <div class="user">
+                            <div class="user-profile">
+                                <div class="img-border">
+                                    <img class="blur" src="images/man.png" alt=""/>
+                                </div>
+                                <div>
+                                    <h1>سعيدة احمد</h1>
+                                    <h2>سعاد حميد</h2>
+                                </div>
+                            </div>
+                            <div class="user-details">
+                                <img src="images/global.png" alt=""/>
+                                <h2>السعودية</h2>
+                                <img src="images/calendar.png" alt=""/>
+                                <h2>25 عام</h2>
+                                <img src="images/location.png" alt=""/>
+                                <h2>جدة</h2>
+                            </div>
+                            <button>عرض الملف الشخصي</button>
+                        </div>
+                    </div>
+                </div><!-- end users -->
+                <div class="pages">
+                    <div>
+                        <img src="images/vector-right.png" alt=""/>
+                    </div>
+                    <div class="numbers">
+                        <h2>1</h2>
+                        <h2 class="active-page">2</h2>
+                        <h2>3</h2>
+                        <h2>4</h2>
+                        <h2>...</h2>
+                        <h2>37</h2>
+                        <h2>38</h2>
+                        <h2>39</h2>
+                        <h2>40</h2>
+                    </div>
+                    <div>
+                        <img src="images/vector-left.png" alt=""/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--end body -->
+    <div class="bottom">
+        <div>
+            <div class="bottom-logo">
+                <div>
+                    <img src="images/logo-light.png" alt=""/>
+                    <div>
+                        <h2>الأسرة السعيدة</h2>
+                        <br/>
+                        <h4>للتوفيق بين الأزواج</h4>
+                    </div>
+                </div>
+                <h1>
+                    منصة الأسرة السعيدة منصة للتوفيق
+                    <br/>
+                    بين الأزواج 
+                </h1>
+            </div>
+            <div class="bottom-links">
+                <div>
+                    <h2>الأسرة السعيدة</h2> 
+                    <a href="#">طريقه عمل الموقع</a>
+                    <a href="#">تعرف على المنصة</a>
+                    <a href="#">قصص نجاح</a>
+                    <a href="#">المميزات</a>
+                </div>
+                <div>
+                    <a href="#">الأسئلة الشائعة</a>
+                    <a href="#">باقات الاشتراك</a>
+                    <a href="#">اتصل بنا</a>
+                </div>
+                <div>
+                   <h2>روابط سريعة</h2> 
+                   <a href="#">سياسة الخصوصية</a>
+                   <a href="#">سياسة الإسترجاع</a>
+                   <a href="#">الأحكام و الشروط</a>
+                   <a href="#">سياسة الدفع</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="social">
+        <div>
+            <div class="social-icons">
+                <img src="images/facebook.png" alt="" />
+                <img src="images/twitter.png" alt="" />
+                <img src="images/instagram.png" alt="" />
+            </div>
+            <h4>جميع الحقوق محفوظة 2022 ©</h4>
+        </div>
+    </div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>	
