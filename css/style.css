@@ -60,6 +60,15 @@ h1, h2, h3, h4, h5, h6 {
 p{
   margin:0;
 }
+a,
+a:hover, 
+a:focus,
+a:active,
+.search-container > a
+.profile-top a{
+  text-decoration: none;
+  color: inherit;
+}
 .img-border{
   border: 2px solid #631E73;
   background-color: #631E73;
@@ -105,20 +114,21 @@ p{
   left: 0px;
   z-index: 99;
 }
-.header a{
+.header-content > a,
+.mobile-menu > a{
   font-family: Hanimation_Arabic_Medium;
   font-size: 30px;
-  text-decoration: none;
   color: #221923;
   cursor: pointer;
 }
-.login, .logout{
+.login, .signup{
   font-family: Hanimation_Arabic_Regular;
   font-size: 18px;
   color: #221923;
   background-color: transparent;
+  text-decoration: none;
 }
-.logout{
+.signup, .signup:hover{
   background-color: #631E73;
   color: #FFFFFF;
   padding: 5px 20px;
@@ -253,7 +263,7 @@ p{
   margin-left: 6%;
   margin-block: 180px;
 }
-.body-full{
+.full{
   display: grid;
   grid-template-columns: 90%;
   justify-content: center;
@@ -367,7 +377,7 @@ p{
   font-size: 26px;
   color: #221923;
 }
-.search-container button{
+.search-container > a{
   padding: 15px 40px;
   font-family: Hanimation_Arabic_Regular;
   font-size: 28px;
@@ -380,7 +390,9 @@ p{
   background-color: #F9F8F9;
   cursor: pointer;
 }
-.search-container h2, .search-container select{
+.search-container h2, 
+.search-container button,
+.search-container select{ 
   font-family: Hanimation_Arabic_Regular;
   font-size: 24px;
   color: #221923;
@@ -411,11 +423,9 @@ p{
   font-size: 18px;
   padding-inline: 10px;
 }
-.search-area div:nth-child(5){
+.search-area button{
   background-color: #631E73;
   padding-inline: 50px;
-}
-.search-area div:nth-child(5) h2{
   color: #FFFFFF;
 }
 /* user */
@@ -495,7 +505,7 @@ p{
   display: flex;
   padding: 0px;
 }
-.numbers h2{
+.numbers a{
   font-family: Hanimation_Arabic_Medium;
   font-size: 22px;
   cursor: pointer;
@@ -503,7 +513,7 @@ p{
   border-radius: 5px;
   cursor: pointer;
 }
-.numbers h2:not(.active-page){
+.numbers a:not(.active-page){
   color: #606060;
 }
 .numbers .active-page{

@@ -15,13 +15,15 @@
 
 <body>
     <div class="header">
-        <div class="logo-area">
-            <img src="images/logo.png" alt=""/>
-            <div>
-                <h2>الأسرة السعيدة</h2>
-                <h3>للتوفيق بين الأزواج</h3>
+        <a href="">
+            <div class="logo-area">
+                <img src="images/logo.png" alt=""/>
+                <div>
+                    <h2>الأسرة السعيدة</h2>
+                    <h3>للتوفيق بين الأزواج</h3>
+                </div>
             </div>
-        </div>
+        </a>
         <div class="header-content">
             <a href="#">عن المنصة</a>
             <a href="#">الاشتراك</a>
@@ -31,50 +33,48 @@
                 <img src="images/search.png" alt=""/>
             </div>
             <div>
-                <a href="">
-                    <button class="login">تسجيل دخول</button>
-                </a>
-                <a href="">
-                    <button class="logout">سجل مجانا</button>
-                </a>
+                <a class="login" href="">تسجيل دخول</a>
+                <a class="signup" href="">سجل مجانا</a>
             </div>
             <i onclick="mobileMenu()" class="fa-solid fa-bars"></i>
         </div>
         <div class="mobile-menu">
-            <div class="d-flex align-items-center">
-                <a href="">
-                    <button class="login">تسجيل دخول</button>
-                </a>
-                <a href="">
-                    <button class="logout">سجل مجانا</button>
-                </a>
+            <div>
+                <a class="login" href="">تسجيل دخول</a>
+                <a class="signup" href="">سجل مجانا</a>
             </div>
-            <a href="#">عن المنصة</a>
-            <a href="#">الاشتراك</a>
-            <a href="#">الأسئلة الشائعة</a>
-            <a href="#">اتصل بنا</a>
+            <a href="">عن المنصة</a>
+            <a href="">الاشتراك</a>
+            <a href="">الأسئلة الشائعة</a>
+            <a href="">اتصل بنا</a>
+            <a href="">
+                تسجيل الخروج
+                <img style="width: 20px; height: 20px; margin-right: 30px;" src="images/exit.png" alt=""/>
+            </a>
         </div>
     </div><!-- start body -->
     <div class="body">
         <div class="section profile-container">
-            <div class="profile-bottom">
-                <h2>انتقل الى الإرشادات<br/> والنصائح</h2>
-                <div>
-                    <img src="images/arrow-left.png" alt=""/>
+            <a href="">
+                <div class="profile-bottom">
+                    <h2>انتقل الى الإرشادات<br/> والنصائح</h2>
+                    <div>
+                        <img src="images/arrow-left.png" alt=""/>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
         <div class="d-flex flex-column gap-5 main">
             <div class="section date-container">
                 <div>
                     <h2>الجمعة 25 فبراير</h2>
-                    <h1>مساء الخير</h1>
+                    <h1>مساء الخير محمد</h1>
                 </div>
                 <img src="images/plane.png" alt=""/>
             </div>
             <div class="section users-container">
-                <form>
-                    <div class="search-container">
+                <div class="search-container">
+                    <form>
                         <div class="search-area">
                             <div>
                                 <select name="sex">
@@ -103,16 +103,14 @@
                                 <h2>الى</h2>
                                 <input type="number" value="26"/>
                             </div>
-                            <div>
-                                <h2>بحث</h2>
-                            </div>
+                            <button type="submit">بحث</button>
                         </div>
-                        <button type="submit">بحث متقدم</button>
-                    </div>
-                </form><!--start users -->
+                    </form>
+                    <a href="">بحث متقدم</a>
+                </div><!--start users -->
                 <div class="users-area">
                     <div>
-                        <div class="user">
+                        <a href="" class="user">
                             <div class="user-profile">
                                 <div class="img-border">
                                     <img class="blur" src="images/man.png" alt=""/>
@@ -131,8 +129,8 @@
                                 <h2>جدة</h2>
                             </div>
                             <button>عرض الملف الشخصي</button>
-                        </div>
-                        <div class="user">
+                        </a>
+                        <a href="" class="user">
                             <div class="user-profile">
                                 <div class="img-border">
                                     <img class="blur" src="images/man.png" alt=""/>
@@ -151,8 +149,8 @@
                                 <h2>جدة</h2>
                             </div>
                             <button>عرض الملف الشخصي</button>
-                        </div>
-                        <div class="user">
+                        </a>
+                        <a href="" class="user">
                             <div class="user-profile">
                                 <div class="img-border">
                                     <img class="blur" src="images/man.png" alt=""/>
@@ -171,8 +169,8 @@
                                 <h2>جدة</h2>
                             </div>
                             <button>عرض الملف الشخصي</button>
-                        </div>
-                        <div class="user">
+                        </a>
+                        <a href="" class="user">
                             <div class="user-profile">
                                 <div class="img-border">
                                     <img class="blur" src="images/man.png" alt=""/>
@@ -191,8 +189,8 @@
                                 <h2>جدة</h2>
                             </div>
                             <button>عرض الملف الشخصي</button>
-                        </div>
-                        <div class="user">
+                        </a>
+                        <a href="" class="user">
                             <div class="user-profile">
                                 <div class="img-border">
                                     <img class="blur" src="images/man.png" alt=""/>
@@ -211,8 +209,8 @@
                                 <h2>جدة</h2>
                             </div>
                             <button>عرض الملف الشخصي</button>
-                        </div>
-                        <div class="user">
+                        </a>
+                        <a href="" class="user">
                             <div class="user-profile">
                                 <div class="img-border">
                                     <img class="blur" src="images/man.png" alt=""/>
@@ -231,8 +229,8 @@
                                 <h2>جدة</h2>
                             </div>
                             <button>عرض الملف الشخصي</button>
-                        </div>
-                        <div class="user">
+                        </a>
+                        <a href="" class="user">
                             <div class="user-profile">
                                 <div class="img-border">
                                     <img class="blur" src="images/man.png" alt=""/>
@@ -251,8 +249,8 @@
                                 <h2>جدة</h2>
                             </div>
                             <button>عرض الملف الشخصي</button>
-                        </div>
-                        <div class="user">
+                        </a>
+                        <a href="" class="user">
                             <div class="user-profile">
                                 <div class="img-border">
                                     <img class="blur" src="images/man.png" alt=""/>
@@ -271,8 +269,8 @@
                                 <h2>جدة</h2>
                             </div>
                             <button>عرض الملف الشخصي</button>
-                        </div>
-                        <div class="user">
+                        </a>
+                        <a href="" class="user">
                             <div class="user-profile">
                                 <div class="img-border">
                                     <img class="blur" src="images/man.png" alt=""/>
@@ -291,26 +289,30 @@
                                 <h2>جدة</h2>
                             </div>
                             <button>عرض الملف الشخصي</button>
-                        </div>
+                        </a>
                     </div>
                 </div><!-- end users -->
                 <div class="pages">
                     <div>
-                        <img src="images/vector-right.png" alt=""/>
+                        <a href="">
+                            <img src="images/vector-right.png" alt=""/>
+                        </a>
                     </div>
                     <div class="numbers">
-                        <h2>1</h2>
-                        <h2 class="active-page">2</h2>
-                        <h2>3</h2>
-                        <h2>4</h2>
-                        <h2>...</h2>
-                        <h2>37</h2>
-                        <h2>38</h2>
-                        <h2>39</h2>
-                        <h2>40</h2>
+                        <a href="">1</a>
+                        <a href="" class="active-page">2</a>
+                        <a href="">3</a>
+                        <a href="">4</a>
+                        <a>...</a>
+                        <a href="">37</a>
+                        <a href="">38</a>
+                        <a href="">39</a>
+                        <a href="">40</a>
                     </div>
                     <div>
-                        <img src="images/vector-left.png" alt=""/>
+                        <a href="">
+                            <img src="images/vector-left.png" alt=""/>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -359,9 +361,15 @@
     <div class="social">
         <div>
             <div class="social-icons">
-                <img src="images/facebook.png" alt="" />
-                <img src="images/twitter.png" alt="" />
-                <img src="images/instagram.png" alt="" />
+                <a href="">
+                    <img src="images/facebook.png" alt="" />
+                </a>
+                <a href="">
+                    <img src="images/twitter.png" alt="" />
+                </a>
+                <a href="">
+                    <img src="images/instagram.png" alt="" />
+                </a>
             </div>
             <h4>جميع الحقوق محفوظة 2022 ©</h4>
         </div>

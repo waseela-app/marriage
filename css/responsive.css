@@ -23,102 +23,103 @@
     font-style: normal;
 }
 @media( max-width: 1820px){
-    .profile-top h3,
-    .logo-area h3{
-      font-size: 14px;
-    }
-    .profile-top h2,
-    .account h2{
-      font-size: 16px;
-    }
-    .numbers h2,
-    .bottom-links a,
-    .search-area input{
-      font-size: 18px;
-    }
-    .user-details h2,
-    .search-container h2,
-    .search-container select,
-    .profile-bottom h2,
-    .logo-area h2,
-    .bottom-logo h2,
-    .bottom-links h2{
-      font-size: 20px;
-    }
-    .user-profile h2{
-      font-size: 22px;
-    }
-    .user-profile h1,
-    .profile-container button,
-    .date-container h2,
-    .bottom-logo h1{
-      font-size: 24px;
-    }
-    .header a{
-      font-size: 26px;
-    }
-    .date-container h1{
-      font-size: 30px;    
-    }
-    .account img:nth-child(1){
-      width: 50px;
-      height: 50px;
-    }
-    .user-profile{
-      display: flex;
-      gap: 15px;
-    }
-    .user-profile img{
-      width: 56px;
-      height: 56px;
-    }
-    .account img:nth-child(2),
-    .profile-bottom img,
-    .search-container img,
-    .time-container img,
-    .user-details img,
-    .icons img{
-      width: 20px;
-      height: 20px;
-    }
-    .user button{ 
-      font-size: 18px;
-      padding: 8px 0px;
-      border-radius: 30px;
-    }
-    .date-container img{
-      width: 224px;
-      height: 224px;
-    }
-    .search-area > div{
-      gap: 8px;
-      padding: 15px 15px;
-    }
-    .search-container button{
-      padding: 15px 40px;
-      font-size: 24px;
-      border-radius: 50px;
-    }
-    .profile-top img{
-      width: 100px;
-      height: 100px;
-    }
-    .logo-area img{
-      width: 52;
-      height: 68;
-    }
-    .pages img{
-      width: 8px;
-      height: 14px;
-      margin: 18px 12px;
-    }
-    .bottom-logo img{
-      width: 65px;
-      height: 80px;
-    }
+  .profile-top h3,
+  .logo-area h3{
+    font-size: 14px;
   }
-  @media(max-width: 1640px){
-    .numbers h2,
+  .profile-top h2,
+  .account h2{
+    font-size: 16px;
+  }
+  .numbers a,
+  .bottom-links a,
+  .search-area input{
+    font-size: 18px;
+  }
+  .user-details h2,
+  .search-container h2,
+  .search-container button,
+  .search-container select,
+  .profile-bottom h2,
+  .logo-area h2,
+  .bottom-logo h2,
+  .bottom-links h2{
+    font-size: 20px;
+  }
+  .user-profile h2{
+    font-size: 22px;
+  }
+  .user-profile h1,
+  .profile-container button,
+  .date-container h2,
+  .bottom-logo h1{
+    font-size: 24px;
+  }
+  .header a{
+    font-size: 26px;
+  }
+  .date-container h1{
+    font-size: 30px;    
+  }
+  .account img:nth-child(1){
+    width: 50px;
+    height: 50px;
+  }
+  .user-profile{
+    display: flex;
+    gap: 15px;
+  }
+  .user-profile img{
+    width: 56px;
+    height: 56px;
+  }
+  .account img:nth-child(2),
+  .profile-bottom img,
+  .search-container img,
+  .time-container img,
+  .user-details img,
+  .icons img{
+    width: 20px;
+    height: 20px;
+  }
+  .user button{ 
+    font-size: 18px;
+    padding: 8px 0px;
+    border-radius: 30px;
+  }
+  .date-container img{
+    width: 224px;
+    height: 224px;
+  }
+  .search-area > div{
+    gap: 8px;
+    padding: 15px 15px;
+  }
+  .search-container > a{
+    padding: 15px 40px;
+    font-size: 24px;
+    border-radius: 50px;
+  }
+  .profile-top img{
+    width: 100px;
+    height: 100px;
+  }
+  .logo-area img{
+    width: 52;
+    height: 68;
+  }
+  .pages img{
+    width: 8px;
+    height: 14px;
+    margin: 18px 12px;
+  }
+  .bottom-logo img{
+    width: 65px;
+    height: 80px;
+  }
+}
+@media(max-width: 1640px){
+    .numbers a,
     .bottom-links a,
     .user button,
     .search-area input{
@@ -126,6 +127,7 @@
     }
     .user-details h2,
     .search-container h2,
+    .search-container button,
     .search-container select,
     .profile-bottom h2,
     .logo-area h2,
@@ -140,7 +142,7 @@
     .profile-container button,
     .date-container h2,
     .bottom-logo h1,
-    .search-container button{
+    .search-container > a{
       font-size: 20px;
     }
     .header a{
@@ -173,7 +175,7 @@
       width: 200px;
       height: 200px;
     }
-    .search-container button{
+    .search-container > a{
       padding: 10px 30px;
     }
     .profile-top img{
@@ -206,11 +208,12 @@
     }
     .user-details h2,
     .search-container select,
+    .search-container button,
     .search-container h2{
       font-size: 12px;
     }
     .user-profile h2,
-    .search-container button{
+    .search-container > a{
       font-size: 14px;
     }
     .user-profile h1,
@@ -238,8 +241,7 @@
     .search-area >div:first-child{
       padding-right: 20px;
     }
-    .search-area div:nth-child(5){
-      background-color: #631E73;
+    .search-area button{
       padding-inline: 30px;
     }
     .time-container section{
@@ -263,8 +265,8 @@
       gap: 8px;
       padding: 8px 8px;
     }
-    .search-container button{
-      padding: 8px 20px;
+    .search-container > a{
+      padding: 10px 20px;
     }
     .profile-top img{
       width: 80px;
@@ -288,7 +290,7 @@
       height: 10px;
       margin: 14px 10px;
     }
-    .numbers h2{
+    .numbers a{
       padding: 10px 10px;
       border-radius: 5px;
     }
@@ -333,7 +335,7 @@
       justify-content: space-between;
       gap: 0px;
     }
-    .profile-bottom{
+    .profile-container > a{
       width: 50%
     }
   }
@@ -343,7 +345,7 @@
       justify-content: right;
       gap: 20px;
     }
-    .search-container button{
+    .search-container > a{
       width: fit-content;
       padding: 10px 30px;
     }
@@ -356,7 +358,7 @@
       grid-template-columns: 1fr;
       gap: 50px;
     }
-    .profile-bottom{
+    .profile-container > a{
       width: 40%
     }
   }
@@ -380,8 +382,15 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: 150px;
+      gap: 50px;
       align-items: center;
+    }
+    .bottom-logo{
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 70px;
+      width: 100%;
     }
     .bottom-links{
       width: 70%;
@@ -419,6 +428,7 @@
       padding: 70px 20px;
     }
     .search-container select,
+    .search-container button,
     .search-container h2{
       font-size: 9px;
     }
@@ -432,12 +442,8 @@
     .search-area >div:first-child{
       padding-right: 10px;
     }
-    .search-area div:nth-child(5){
-      background-color: #631E73;
+    .search-area button{
       padding-inline: 15px;
-    }
-    .search-area div:nth-child(5) h2{
-      color: #FFFFFF;
     }
     .time-container div{
       position: relative;
@@ -453,7 +459,7 @@
     .search-area > div:not(:last-child){
       border-right: 2px solid #FFFFFF;
     }
-    .search-container button{
+    .search-container > a{
       padding: 8px 20px;
       font-size: 10px;
     }
@@ -511,11 +517,8 @@
       font-size: 12px;
       border-radius: 50px;
     }
-    .profile-bottom{
+    .profile-container > a{
       width: 50%;
-      position: relative;
-      border-radius: 20px;
-      box-shadow: 0px 40px 60px #795e8028;
     }
     .profile-bottom h2{
       font-family: Hanimation_Arabic_Regular;
@@ -533,6 +536,9 @@
       background-color: #FFFFFF;
       padding: 5px 8px;
       box-shadow: 0px 12px 40px #00000021;
+    }
+    .full{
+      grid-template-columns: 95%;
     }
     .search-area input{
       width: 25px;
@@ -578,7 +584,7 @@
       height: 8px;
       margin: 11px 10px;
     }
-    .numbers h2{
+    .numbers a{
       font-size: 10px;
       padding: 10px 10px;
       border-radius: 5px;
@@ -586,6 +592,10 @@
     .bottom-logo img{
       width: 40px;
       height: 50px;
+    }
+    .bottom-logo{
+      flex-direction: column;
+      gap: 30px;
     }
     .bottom-logo h2{
       font-size: 12px;
