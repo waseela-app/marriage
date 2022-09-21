@@ -37,7 +37,7 @@ body{
 }
 /* width */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 5px;
 }
 /* Track */
 ::-webkit-scrollbar-track {
@@ -378,7 +378,7 @@ a:active,
   color: #221923;
 }
 .search-container > a{
-  padding: 15px 40px;
+  padding: 20px 40px;
   font-family: Hanimation_Arabic_Regular;
   font-size: 28px;
   background-color: #F1BD19;
@@ -389,6 +389,10 @@ a:active,
 .search-container select{
   background-color: #F9F8F9;
   cursor: pointer;
+  width: 100px;
+}
+.search-container option{
+  font-size: 30px;
 }
 .search-container h2, 
 .search-container button,
@@ -631,6 +635,7 @@ a:active,
   height: 250px;
 }
 .about-container h1,
+.questions-container h1,
 .register-container h1{
   font-family: Hanimation_Arabic_SemiBold;
   font-size: 26px;
@@ -641,11 +646,13 @@ a:active,
   font-size: 18px;
   color: #F1BD19;
 }
+.questions-container h2,
 .about-container h2{
   font-family: Hanimation_Arabic_SemiBold;
   font-size: 18px;
   color: #221923;
 }
+.questions-container h3,
 .about-container h3,
 .about-container li,
 .register-container h3,
@@ -691,6 +698,48 @@ a:active,
   flex-direction: column;
   gap: 30px;
 }
+.questions-container{
+  background-color: #FFFFFF;
+  padding: 50px;
+  padding-top: 100px;
+  border-radius: 30px;
+  margin-top: 150px;  
+  margin-bottom: 50px;  
+  width: 70%;
+  margin-inline: auto;
+}
+.questions-container > div{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  padding-left: 20px;
+  max-height: 400px;
+  overflow-y: auto;
+  text-align: right;
+}
+.questions-area{
+  border-bottom: 1px solid #221923;
+  padding-block: 15px;
+  cursor: pointer;
+}
+.questions-container h3{
+  display: none;
+  margin-top: 15px;
+}
+.active-question h3{
+  display: block;
+  animation: slide-down 500ms forwards;
+}
+.questions-area > div{
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+.questions-area img{
+  width: 10px;
+  height: 15px;
+}
 
 @keyframes slide-up {
   0%{
@@ -710,5 +759,15 @@ a:active,
   100%{
     opacity: 1;
     transform: translateX(0px);
+  }
+}
+@keyframes slide-down {
+  0%{
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
