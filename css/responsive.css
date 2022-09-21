@@ -389,6 +389,7 @@
   .mobile-menu .account{
     display: flex;
   }
+  .notifications-container,
   .questions-container,
   .about-container,
   .register-container{
@@ -424,6 +425,7 @@
   .search-container h2{
     font-size: 9px;
   }
+  .notifications-container button,
   .questions-container h3,
   .about-container h3,
   .about-container li,
@@ -431,11 +433,13 @@
   .register-container li{
     font-size: 12px;
   }
+  .notifications-container h2,
   .questions-container h2,
   .about-container h2,
   .register-container h2{
     font-size: 14px;
   }
+  .notifications-container h1,
   .questions-container h1,
   .about-container h1,
   .register-container h1{
@@ -471,11 +475,13 @@
     padding: 8px 20px;
     font-size: 10px;
   }
+  .notifications-container{
+    width: 95%;
+  }
   .questions-container,
   .about-container,
   .register-container{
     padding: 30px;
-    padding-top: 70px;
     width: 95%;
   }
   .register-container > div{
@@ -500,6 +506,7 @@
   .social h4,
   .logo-area h2,
   .bottom-logo h4,
+  .notifications-container button,
   .questions-container h3,
   .about-container h3,
   .about-container li,
@@ -510,6 +517,7 @@
   }
   .bottom-logo h2,
   .bottom-links h2,
+  .notifications-container h2,
   .questions-container h2,
   .about-container h2,
   .register-container h2,
@@ -520,6 +528,7 @@
   .date-container h1{
     font-size: 14px;
   }
+  .notifications-container h1,
   .questions-container h1,
   .about-container h1,
   .register-container h1{
@@ -639,11 +648,24 @@
     width: 15px;
     height: 15px;
   }
+  .notifications-container{
+    width: 95%;
+  }
+  .notifications-container > div:first-child{
+    padding-inline: 30px;
+    padding-top: 30px;
+  }
+  .notifications-container button{
+    padding: 5px 15px;
+  }
+  .notifications-area > div{
+    padding-left: 10px;
+  }
   .questions-container,
   .about-container,
   .register-container{
     padding: 20px;
-    padding-top: 70px;
+    padding-top: 50px;
     width: 95%;
   }
   .register-container > img{
