@@ -1,26 +1,26 @@
 @font-face {
-    font-family: 'Hanimation_Arabic_Light';
-    src: url('../fonts/ArbFONTS-Hanimation_Arabic_Light.otf')  format('opentype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Hanimation_Arabic_Light';
+  src: url('../fonts/ArbFONTS-Hanimation_Arabic_Light.otf')  format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'Hanimation_Arabic_Medium';
-    src: url('../fonts/ArbFONTS-Hanimation_Arabic_Medium.otf')  format('opentype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Hanimation_Arabic_Medium';
+  src: url('../fonts/ArbFONTS-Hanimation_Arabic_Medium.otf')  format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'Hanimation_Arabic_Regular';
-    src: url('../fonts/ArbFONTS-Hanimation_Arabic_Regular.otf')  format('opentype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Hanimation_Arabic_Regular';
+  src: url('../fonts/ArbFONTS-Hanimation_Arabic_Regular.otf')  format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'Hanimation_Arabic_SemiBold';
-    src: url('../fonts/ArbFONTS-Hanimation_Arabic_SemiBold.otf')  format('opentype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Hanimation_Arabic_SemiBold';
+  src: url('../fonts/ArbFONTS-Hanimation_Arabic_SemiBold.otf')  format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 @media( max-width: 1820px){
   .profile-top h3,
@@ -119,516 +119,528 @@
   }
 }
 @media(max-width: 1640px){
-    .numbers a,
-    .bottom-links a,
-    .user button,
-    .search-area input{
-      font-size: 14px;
-    }
-    .user-details h2,
-    .search-container h2,
-    .search-container button,
-    .search-container select,
-    .profile-bottom h2,
-    .logo-area h2,
-    .bottom-logo h2,
-    .bottom-links h2{
-      font-size: 16px;
-    }
-    .user-profile h2{
-      font-size: 18px;
-    }
-    .user-profile h1,
-    .profile-container button,
-    .date-container h2,
-    .bottom-logo h1,
-    .search-container > a{
-      font-size: 20px;
-    }
-    .header a{
-      font-size: 22px;
-    }
-    .date-container h1{
-      font-size: 26px;    
-    }
-    .account img:nth-child(1){
-      width: 45px;
-      height: 45px;
-    }
-    .user-profile img{
-      width: 52px;
-      height: 52px;
-    }
-    .account img:nth-child(2),
-    .profile-bottom img,
-    .search-container img,
-    .time-container img,
-    .user-details img{
-      width: 18px;
-      height: 18px;
-    }
-    .search-area > div{
-      gap: 5px;
-      padding: 10px 10px;
-    }
-    .date-container img{
-      width: 200px;
-      height: 200px;
-    }
-    .search-container > a{
-      padding: 10px 30px;
-    }
-    .profile-top img{
-      width: 90px;
-      height: 90px;
-    }
-    .logo-area img{
-      width: 52px;
-      height: 68px;
-    }
-    .bottom-logo img{
-      width: 65px;
-      height: 80px;
-    }
-    .pages div{
-      border-radius: 30px;
-      padding-inline: 10px;
-      background-color: #F0F0F0;
-    }
-    .pages img{
-      width: 6px;
-      height: 12px;
-      margin: 18px 10px;
-    }
+  .numbers a,
+  .bottom-links a,
+  .user button,
+  .search-area input{
+    font-size: 14px;
   }
-  @media(max-width: 1485px){
-    .user button,
-    .search-area input{
-      font-size: 10px;
-    }
-    .user-details h2,
-    .search-container select,
-    .search-container button,
-    .search-container h2{
-      font-size: 12px;
-    }
-    .user-profile h2,
-    .search-container > a{
-      font-size: 14px;
-    }
-    .user-profile h1,
-    .profile-container button,
-    .date-container h2,
-    .bottom-logo h1{
-      font-size: 16px;
-    }
-    .header a{
-      font-size: 18px;
-    }
-    .date-container h1{
-      font-size: 22px;    
-    }
-    .account img:nth-child(1){
-      width: 40px;
-      height: 40px;
-    }
-    .search-area input{
-      width: 60px;
-      height: 30px;
-      border-radius: 10px;
-      padding-right: 10px;
-    }
-    .search-area >div:first-child{
-      padding-right: 20px;
-    }
-    .search-area button{
-      padding-inline: 30px;
-    }
-    .time-container section{
-      top: 50%;
-      transform: translateY(-50%);
-      left: 5px;
-    }
-    .user-profile img{
-      width: 45px;
-      height: 45px;
-    }
-    .account img:nth-child(2),
-    .profile-bottom img,
-    .search-container img,
-    .time-container img,
-    .user-details img{
-      width: 14px;
-      height: 14px;
-    }
-    .search-area > div{
-      gap: 8px;
-      padding: 8px 8px;
-    }
-    .search-container > a{
-      padding: 10px 20px;
-    }
-    .profile-top img{
-      width: 80px;
-      height: 80px;
-    }
-    .logo-area img{
-      width: 48px;
-      height: 64px;
-    }
-    .bottom-logo img{
-      width: 60px;
-      height: 75px;
-    }
-    .pages div{
-      border-radius: 30px;
-      padding-inline: 8px;
-      background-color: #F0F0F0;
-    }
-    .pages img{
-      width: 4px;
-      height: 10px;
-      margin: 14px 10px;
-    }
-    .numbers a{
-      padding: 10px 10px;
-      border-radius: 5px;
-    }
-    .header{
-      height: 80px;
-    }
-    .body{
-      margin-inline: 120px;
-    }
-    .profile-container{
-      gap: 30px;
-      padding: 30px 20px;
-    }
-    .profile-top{
-      gap: 30px;
-    }
-    .date-container img{
-      width: 160px;
-      height: 160px;
-    }
-    .date-container{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-left: 20px;
-    }
-    .users-container{
-      padding: 40px;
-    }
+  .user-details h2,
+  .search-container h2,
+  .search-container button,
+  .search-container select,
+  .profile-bottom h2,
+  .logo-area h2,
+  .bottom-logo h2,
+  .bottom-links h2{
+    font-size: 16px;
   }
-  @media( max-width: 1275px){
-    .users-area > div{
-      grid-template-columns: 1fr 1fr;
-    }
+  .user-profile h2{
+    font-size: 18px;
   }
-  @media( max-width: 1150px){
-    .body{
-      grid-template-columns: 100%;
-    }
-    .profile-container{
-      flex-direction: row;
-      justify-content: space-between;
-      gap: 0px;
-    }
-    .profile-container > a{
-      width: 50%
-    }
+  .user-profile h1,
+  .profile-container button,
+  .date-container h2,
+  .bottom-logo h1,
+  .search-container > a{
+    font-size: 20px;
   }
-  @media( max-width: 950px){
-    .search-container{
-      flex-direction: column;
-      justify-content: right;
-      gap: 20px;
-    }
-    .search-container > a{
-      width: fit-content;
-      padding: 10px 30px;
-    }
-    .users-area{
-      margin-top: 20px;
-    }
+  .header a{
+    font-size: 22px;
   }
-  @media( max-width: 840px){
-    .users-area > div{
-      grid-template-columns: 1fr;
-      gap: 50px;
-    }
-    .profile-container > a{
-      width: 40%
-    }
+  .date-container h1{
+    font-size: 26px;    
   }
-  @media(max-width: 1050px){
-    header{
-      gap: 0px;
-    }
-    .header-content{
-      justify-content: left;
-      gap: 15px;
-      width: fit-content;
-    }
-    .header-content a{
-      display: none;
-    }
-    .account{
-      display: none;
-    }
-    .bottom > div{
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 50px;
-      align-items: center;
-    }
-    .bottom-logo{
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      gap: 70px;
-      width: 100%;
-    }
-    .bottom-links{
-      width: 70%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .notification h2{
-      font-size: 14px;
-    }
-    .notification h3,
-    .notification h4{
-      font-size: 10px;
-    }
-    .notification{
-      top: 210%;
-    }
-    .header i{
-      display: block;
-    }
-    .mobile-menu .account{
-      display: flex;
-    }
+  .account img:nth-child(1){
+    width: 45px;
+    height: 45px;
   }
-  @media( max-width: 800px){
-    .body{
-      display: grid;
-      grid-template-columns: 100%;
-      gap: 50px;
-      margin-right: 2%;
-      margin-left: 2%;
-      margin-block: 120px;
-    }
-    .users-container{
-      padding: 70px 20px;
-    }
-    .search-container select,
-    .search-container button,
-    .search-container h2{
-      font-size: 9px;
-    }
-    .search-area > div{
-      display: flex;
-      align-items: center;
-      gap: 2px;
-      background-color: #F9F8F9;
-      padding: 3px 5px;
-    }
-    .search-area >div:first-child{
-      padding-right: 10px;
-    }
-    .search-area button{
-      padding-inline: 15px;
-    }
-    .time-container div{
-      position: relative;
-    }
-    .time-container section{
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: 3px;
-    }
-    .search-area > div:not(:last-child){
-      border-right: 2px solid #FFFFFF;
-    }
-    .search-container > a{
-      padding: 8px 20px;
-      font-size: 10px;
-    }
+  .user-profile img{
+    width: 52px;
+    height: 52px;
   }
-  @media( max-width: 350px){
-    .search-container{
-      display: none;
-    }
+  .account img:nth-child(2),
+  .profile-bottom img,
+  .search-container img,
+  .time-container img,
+  .user-details img{
+    width: 18px;
+    height: 18px;
   }
-  @media( max-width: 550px){
-    .header{
-      height: 70px;
-    }
-    .logo-area{
-      gap: 10px;
-    }
-    .logo-area img{
-      width: 30px;
-      height: 40px;
-    }
-    .logo-area h2{
-      font-size: 10px;
-    }
-    .logo-area h3{
-      font-size: 8px;
-    }
-    .profile-container{
-      display: flex;
-      gap: 0px;
-      padding: 30px 20px;
-    }
-    .profile-top{
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .profile-top > div{
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .profile-top img{
-      width: 50px;
-      height: 50px;
-    }
-    .profile-top h2{
-      font-size: 10px;
-    }
-    .profile-top h3{
-      font-size: 8px;
-    }
-    .profile-container button{
-      padding: 10px 0px;
-      width: 100%;
-      font-size: 12px;
-      border-radius: 50px;
-    }
-    .profile-container > a{
-      width: 50%;
-    }
-    .profile-bottom h2{
-      font-family: Hanimation_Arabic_Regular;
-      font-size: 12px;
-      color: #221923;
-      text-align: center;
-      padding: 40px 0px;
-    }
-    .profile-bottom div{
-      position: absolute;
-      top: 50%;
-      left: 0px;
-      transform: translate(-50%,-50%);
-      border-radius: 50%;
-      background-color: #FFFFFF;
-      padding: 5px 8px;
-      box-shadow: 0px 12px 40px #00000021;
-    }
-    .full{
-      grid-template-columns: 95%;
-    }
-    .search-area input{
-      width: 25px;
-      height: 30px;
-      font-size: 10px;
-      border-radius: 5px;
-      padding-right: 5px;
-    }
-    .search-container h1{
-      font-family: Hanimation_Arabic_Medium;
-      font-size: 20px;
-      color: #221923;
-    }
-    .date-container{
-      padding-left: 0px;
-    }
-    .date-container div{
-      padding: 30px;
-    }
-    .date-container img{
-      width: 124px;
-      height: 124px;
-    }
-    .date-container h2{
-      font-size: 12px;
-    }
-    .date-container h1{
-      font-size: 14px;
-    }
-    .section{
-      border-radius: 30px;
-    }
-    .pages{
-      gap: 2px;
-    }
-    .pages div{
-      border-radius: 30px;
-      padding-inline: 3px;
-      background-color: #F0F0F0;
-    }
-    .pages img{
-      width: 4px;
-      height: 8px;
-      margin: 11px 10px;
-    }
-    .numbers a{
-      font-size: 10px;
-      padding: 10px 10px;
-      border-radius: 5px;
-    }
-    .bottom-logo img{
-      width: 40px;
-      height: 50px;
-    }
-    .bottom-logo{
-      flex-direction: column;
-      gap: 30px;
-    }
-    .bottom-logo h2{
-      font-size: 12px;
-    }
-    .bottom-logo h4{
-      font-size: 10px;
-    }
-    .bottom-logo h1{
-      font-size: 14px;
-    }
-    .bottom-links{
-      width: 80%;
-    }
-    .bottom-links h2{
-      font-size: 12px;
-    }
-    .bottom-links a{
-      font-size: 10px;
-    }
-    .social{
-      padding-block: 20px;
-    }
-    .social div{
-      align-items: center;
-    }
-    .social h4{
-      font-size: 10px;
-    }
-    .social-icons{
-      gap: 5px;
-    }
-    .social-icons img{
-      width: 15px;
-      height: 15px;
-    }
+  .search-area > div{
+    gap: 5px;
+    padding: 10px 10px;
   }
+  .date-container img{
+    width: 200px;
+    height: 200px;
+  }
+  .search-container > a{
+    padding: 10px 30px;
+  }
+  .profile-top img{
+    width: 90px;
+    height: 90px;
+  }
+  .logo-area img{
+    width: 52px;
+    height: 68px;
+  }
+  .bottom-logo img{
+    width: 65px;
+    height: 80px;
+  }
+  .pages div{
+    border-radius: 30px;
+    padding-inline: 10px;
+    background-color: #F0F0F0;
+  }
+  .pages img{
+    width: 6px;
+    height: 12px;
+    margin: 18px 10px;
+  }
+}
+@media(max-width: 1485px){
+  .user button,
+  .search-area input{
+    font-size: 10px;
+  }
+  .user-details h2,
+  .search-container select,
+  .search-container button,
+  .search-container h2{
+    font-size: 12px;
+  }
+  .user-profile h2,
+  .search-container > a{
+    font-size: 14px;
+  }
+  .user-profile h1,
+  .profile-container button,
+  .date-container h2,
+  .bottom-logo h1{
+    font-size: 16px;
+  }
+  .header a{
+    font-size: 18px;
+  }
+  .date-container h1{
+    font-size: 22px;    
+  }
+  .account img:nth-child(1){
+    width: 40px;
+    height: 40px;
+  }
+  .search-area input{
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    padding-right: 10px;
+  }
+  .search-area >div:first-child{
+    padding-right: 20px;
+  }
+  .search-area button{
+    padding-inline: 30px;
+  }
+  .time-container section{
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+  }
+  .user-profile img{
+    width: 45px;
+    height: 45px;
+  }
+  .account img:nth-child(2),
+  .profile-bottom img,
+  .search-container img,
+  .time-container img,
+  .user-details img{
+    width: 14px;
+    height: 14px;
+  }
+  .search-area > div{
+    gap: 8px;
+    padding: 8px 8px;
+  }
+  .search-container > a{
+    padding: 10px 20px;
+  }
+  .profile-top img{
+    width: 80px;
+    height: 80px;
+  }
+  .logo-area img{
+    width: 48px;
+    height: 64px;
+  }
+  .bottom-logo img{
+    width: 60px;
+    height: 75px;
+  }
+  .pages div{
+    padding-inline: 8px;
+  }
+  .pages img{
+    width: 4px;
+    height: 10px;
+    margin: 14px 10px;
+  }
+  .numbers a{
+    padding: 10px 10px;
+    border-radius: 5px;
+  }
+  .header{
+    height: 80px;
+  }
+  .body{
+    margin-inline: 120px;
+  }
+  .profile-container{
+    gap: 30px;
+    padding: 30px 20px;
+  }
+  .profile-top{
+    gap: 30px;
+  }
+  .date-container img{
+    width: 160px;
+    height: 160px;
+  }
+  .date-container{
+    padding-left: 20px;
+  }
+  .users-container{
+    padding: 40px;
+  }
+}
+@media( max-width: 1275px){
+  .users-area > div{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media( max-width: 1150px){
+  .body{
+    grid-template-columns: 100%;
+  }
+  .profile-container{
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0px;
+  }
+  .profile-container > a{
+    width: 50%
+  }
+}
+@media(max-width: 1050px){
+  .notification h3,
+  .notification h4{
+    font-size: 10px;
+  }
+  .notification h2{
+    font-size: 14px;
+  }
+  header{
+    gap: 0px;
+  }
+  .header-content{
+    justify-content: left;
+    gap: 15px;
+    width: fit-content;
+  }
+  .header-content > a{
+    display: none;
+  }
+  .account{
+    display: none;
+  }
+  .bottom > div{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+  }
+  .bottom-logo{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    width: 100%;
+  }
+  .bottom-links{
+    width: 70%;
+  }
+  .notification{
+    top: 210%;
+  }
+  .header i{
+    display: block;
+  }
+  .mobile-menu .account{
+    display: flex;
+  }
+  .about-container,
+  .register-container{
+    width: 90%;
+  }
+}
+@media( max-width: 950px){
+  .search-container{
+    flex-direction: column;
+    justify-content: right;
+    gap: 20px;
+  }
+  .search-container > a{
+    width: fit-content;
+    padding: 10px 30px;
+  }
+  .users-area{
+    margin-top: 20px;
+  }
+}
+@media( max-width: 840px){
+  .users-area > div{
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .profile-container > a{
+    width: 40%
+  }
+}
+@media( max-width: 800px){
+  .search-container select,
+  .search-container button,
+  .search-container h2{
+    font-size: 9px;
+  }
+  .about-container h3,
+  .about-container li,
+  .register-container h3,
+  .register-container li{
+    font-size: 12px;
+  }
+  .about-container h2,
+  .register-container h2{
+    font-size: 14px;
+  }
+  .about-container h1,
+  .register-container h1{
+    font-size: 18px;
+  }
+  .body{
+    grid-template-columns: 100%;
+    gap: 50px;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-block: 120px;
+  }
+  .users-container{
+    padding: 70px 20px;
+  }
+  .search-area > div{
+    gap: 2px;
+    padding: 3px 5px;
+  }
+  .search-area >div:first-child{
+    padding-right: 10px;
+  }
+  .search-area button{
+    padding-inline: 15px;
+  }
+  .time-container div{
+    position: relative;
+  }
+  .search-area > div:not(:last-child){
+    border-right: 2px solid #FFFFFF;
+  }
+  .search-container > a{
+    padding: 8px 20px;
+    font-size: 10px;
+  }
+  .about-container,
+  .register-container{
+    padding: 30px;
+    padding-top: 70px;
+    width: 95%;
+  }
+  .register-container > div{
+    max-width: 60%;
+    gap: 30px;
+  }
+  .register-container > img{
+    width: 100px;
+    height: 130px;
+  }
+  .register-container a{
+    padding: 8px 40px;
+    font-size: 12px;
+  }
+}
+@media( max-width: 550px){
+  .profile-top h3,
+  .logo-area h3{
+    font-size: 8px;
+  }
+  .bottom-links a,
+  .social h4,
+  .logo-area h2,
+  .bottom-logo h4,
+  .about-container h3,
+  .about-container li,
+  .register-container h3,
+  .register-container li,
+  .profile-top h2{
+    font-size: 10px;
+  }
+  .bottom-logo h2,
+  .bottom-links h2,
+  .about-container h2,
+  .register-container h2,
+  .date-container h2{
+    font-size: 12px;
+  }
+  .bottom-logo h1,
+  .date-container h1{
+    font-size: 14px;
+  }
+  .search-container h1{
+    font-size: 20px;
+  }
+  .about-container h1,
+  .register-container h1{
+    font-size: 16px;
+  }
+  .header{
+    height: 70px;
+  }
+  .logo-area{
+    gap: 10px;
+  }
+  .logo-area img{
+    width: 30px;
+    height: 40px;
+  }
+  .profile-container{
+    display: flex;
+    gap: 0px;
+    padding: 30px 20px;
+  }
+  .profile-top{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .profile-top > div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .profile-top img{
+    width: 50px;
+    height: 50px;
+  }
+  .profile-container button{
+    padding: 10px 0px;
+    font-size: 12px;
+  }
+  .profile-container > a{
+    width: 50%;
+  }
+  .profile-bottom h2{
+    font-size: 12px;
+    padding: 40px 0px;
+  }
+  .profile-bottom div{
+    padding: 5px 8px;
+  }
+  .full{
+    grid-template-columns: 95%;
+  }
+  .search-area input{
+    width: 25px;
+    height: 30px;
+    font-size: 10px;
+    border-radius: 5px;
+    padding-right: 5px;
+  }
+  .date-container{
+    padding-left: 0px;
+  }
+  .date-container div{
+    padding: 30px;
+  }
+  .date-container img{
+    width: 124px;
+    height: 124px;
+  }
+  .section{
+    border-radius: 30px;
+  }
+  .pages{
+    gap: 2px;
+  }
+  .pages div{
+    border-radius: 30px;
+    padding-inline: 3px;
+    background-color: #F0F0F0;
+  }
+  .pages img{
+    width: 4px;
+    height: 8px;
+    margin: 11px 10px;
+  }
+  .numbers a{
+    font-size: 10px;
+    padding: 10px 10px;
+    border-radius: 5px;
+  }
+  .bottom-logo img{
+    width: 40px;
+    height: 50px;
+  }
+  .bottom-logo{
+    flex-direction: column;
+    gap: 30px;
+  }
+  .bottom-links{
+    width: 80%;
+  }
+  .social{
+    padding-block: 20px;
+  }
+  .social div{
+    align-items: center;
+  }
+  .social-icons{
+    gap: 5px;
+  }
+  .social-icons img{
+    width: 15px;
+    height: 15px;
+  }
+  .about-container,
+  .register-container{
+    padding: 20px;
+    padding-top: 70px;
+    width: 95%;
+  }
+  .register-container > img{
+    width: 70px;
+    height: 90px;
+  }
+  .register-container > div{
+    max-width: 60%;
+    gap: 30px;
+  }
+  .register-container a{
+    padding: 8px 40px;
+    font-size: 10px;
+  }
+}
+@media( max-width: 350px){
+  .search-container{
+    display: none;
+  }
+}

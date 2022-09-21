@@ -607,6 +607,91 @@ a:active,
   font-size: 14px;
   color: #000000; 
 }
+.register-container{
+  background-color: #FFFFFF;
+  padding: 50px;
+  padding-top: 100px;
+  border-radius: 30px;
+  margin-top: 150px;  
+  margin-bottom: 50px;  
+  width: 70%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.register-container > div{
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.register-container > img{
+  width: 180px;
+  height: 250px;
+}
+.about-container h1,
+.register-container h1{
+  font-family: Hanimation_Arabic_SemiBold;
+  font-size: 26px;
+  color: #221923;
+}
+.register-container h2{
+  font-family: Hanimation_Arabic_SemiBold;
+  font-size: 18px;
+  color: #F1BD19;
+}
+.about-container h2{
+  font-family: Hanimation_Arabic_SemiBold;
+  font-size: 18px;
+  color: #221923;
+}
+.about-container h3,
+.about-container li,
+.register-container h3,
+.register-container li{
+  font-family: Hanimation_Arabic_SemiBold;
+  font-size: 14px;
+  color: #221923;
+}
+.about-container ul,
+.register-container ul{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.about-container ul li::before,
+.register-container ul li::before {
+  content: "\2022";
+  font-size: 20px;
+  font-weight: 900;
+  display: inline-block; 
+  width: 1em;
+  color: #F1BD19;
+}
+.register-container a{
+  background-color: #1A225A;
+  color: #FFFFFF;
+  padding: 10px 60px;
+  width: fit-content;
+  border-radius: 40px;
+  font-family: Hanimation_Arabic_Regular;
+  font-size: 16px;
+}
+.about-container{
+  background-color: #FFFFFF;
+  padding: 50px;
+  padding-top: 100px;
+  border-radius: 30px;
+  margin-top: 150px;  
+  margin-bottom: 50px;  
+  width: 70%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 @keyframes slide-up {
   0%{
     opacity: 0;
