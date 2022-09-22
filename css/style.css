@@ -391,6 +391,7 @@ a:active,
   cursor: pointer;
   width: 100px;
 }
+.advanced-container option,
 .search-container option{
   font-size: 30px;
 }
@@ -614,7 +615,7 @@ a:active,
 .register-container{
   background-color: #FFFFFF;
   padding: 50px;
-  padding-top: 100px;
+  padding-top: 60px;
   border-radius: 30px;
   margin-top: 150px;  
   margin-bottom: 50px;  
@@ -635,6 +636,7 @@ a:active,
   width: 180px;
   height: 250px;
 }
+.advanced-container h1,
 .notifications-container h1,
 .about-container h1,
 .questions-container h1,
@@ -648,6 +650,9 @@ a:active,
   font-size: 18px;
   color: #F1BD19;
 }
+.advanced-range-area input,
+.advanced-selects-container select,
+.advanced-container h2,
 .notifications-container h2,
 .questions-container h2,
 .about-container h2{
@@ -716,14 +721,16 @@ a:active,
   display: flex;
   flex-direction: column;
   margin-top: 50px;
-  padding-left: 20px;
+  padding-right: 20px;
   max-height: 400px;
   overflow-y: auto;
+  direction: ltr;
 }
 .questions-area{
   border-bottom: 1px solid #221923;
   padding-block: 15px;
   cursor: pointer;
+  direction: rtl;
 }
 .questions-container h3{
   display: none;
@@ -778,18 +785,90 @@ a:active,
   flex-direction: column;
   gap: 10px;
   margin-top: 30px;
+  direction: ltr;
 }
-.notifications-area > div{
+.notifications-area > a{
   background-color: #acacac11;
   display: flex;
   align-items: center;
   padding: 10px;
   padding-left: 100px;
+  cursor: pointer;
+  direction: rtl;
 }
 .notifications-area img{
   width: 60px;
   height: 60px;
   margin-left: 15px;
+}
+.advanced-container{
+  background-color: #FFFFFF;
+  padding: 50px 100px;
+  border-radius: 30px;
+  margin-top: 150px;  
+  width: 85%;
+  margin-inline: auto;
+  box-shadow: 0px 10px 60px #795e8015;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.advanced-selects-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 30px;
+}
+.advanced-selects-container img{
+  width: 20px;
+  height: 20px;
+}
+.advanced-selects-container > div{
+  width: 100%;
+  background-color: #F9F8F9;
+  padding: 10px 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.advanced-selects-container select{
+  background-color: #F9F8F9;
+  width: 100%;
+  font-family: Hanimation_Arabic_Regular;
+}
+.advanced-range-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 30px;
+}
+.advanced-range-area{
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  margin-block: 20px;
+}
+.advanced-range-area input{
+  width: 100%;
+  background-color: #F9F8F9;
+  border-radius: 20px;
+  padding-right: 40px;
+}
+.advanced-bottom{
+  margin-left: 7.5%;
+  display: flex;
+  justify-content: left;
+  padding-top: 30px;  
+  padding-bottom: 100px;
+}
+.advanced-bottom button{
+  background-color: #1A225A;
+  color: #FFFFFF;
+  font-family: Hanimation_Arabic_Medium;
+  font-size: 18px;
+  padding: 10px 70px;
+  border-radius: 30px;
 }
 
 @keyframes slide-up {

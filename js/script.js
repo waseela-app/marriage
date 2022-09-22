@@ -33,15 +33,24 @@ document.onclick = function(e){
     }
     
     if (e.target.classList.contains('questions-area') || e.target.closest('.questions-area') !== null){
-        const data = document.querySelectorAll('.questions-area');
-        data.forEach( item => {
-            item.classList.remove("active-question");
-        });
-    }
-    if (e.target.classList.contains('questions-area')){
-        e.target.classList.add("active-question")
-    }
-    if (e.target.closest('.questions-area') !== null){
-        e.target.closest('.questions-area').classList.add("active-question")
+        if (e.target.classList.contains('active-question') || e.target.closest('.questions-area').classList.contains('active-question')){
+            const data = document.querySelectorAll('.questions-area');
+            data.forEach( item => {
+                item.classList.remove("active-question");
+            });
+        }
+        else{
+            const data = document.querySelectorAll('.questions-area');
+            data.forEach( item => {
+                item.classList.remove("active-question");
+            });
+            
+            if (e.target.classList.contains('questions-area')){
+                e.target.classList.add("active-question")
+            }
+            else {
+                e.target.closest('.questions-area').classList.add("active-question")
+            }
+        }
     }
 }
