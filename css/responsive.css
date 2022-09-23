@@ -395,6 +395,7 @@
   .mobile-menu .account{
     display: flex;
   }
+  .settings-container,
   .advanced-container,
   .notifications-container,
   .questions-container,
@@ -442,6 +443,8 @@
   .search-container h2{
     font-size: 9px;
   }
+  .personally-edit a,
+  .advanced-container h3,
   .notifications-container button,
   .questions-container h3,
   .about-container h3,
@@ -450,6 +453,11 @@
   .register-container li{
     font-size: 12px;
   }
+  .settings-selects-container input,
+  .settings-selects-container h2,
+  .settings-selects-container select,
+  .settings-inputs-container input,
+  .settings-container button,
   .advanced-range-area input,
   .advanced-container h2,
   .advanced-selects-container select,
@@ -500,6 +508,7 @@
   .notifications-container{
     width: 95%;
   }
+  .settings-container,
   .advanced-container,
   .questions-container,
   .about-container,
@@ -522,6 +531,14 @@
   .advanced-bottom{
     margin-left: 2.5%;
   }
+  .settings-container img{
+    width: 80px;
+    height: 80px;
+  }
+  .settings-container button{
+    padding: 5px 30px;
+    margin-top: 10px;
+  }
 }
 @media( max-width: 550px){
   .profile-top h3,
@@ -532,6 +549,8 @@
   .social h4,
   .logo-area h2,
   .bottom-logo h4,
+  .personally-edit a,
+  .advanced-container h3,
   .notifications-container button,
   .questions-container h3,
   .about-container h3,
@@ -541,6 +560,11 @@
   .profile-top h2{
     font-size: 10px;
   }
+  .settings-selects-container input,
+  .settings-selects-container h2,
+  .settings-selects-container select,
+  .settings-inputs-container input,
+  .settings-container button,
   .advanced-range-area input,
   .advanced-container h2,
   .advanced-selects-container select,
@@ -692,6 +716,7 @@
   .notifications-area > a{
     padding-left: 10px;
   }
+  .settings-container,
   .questions-container,
   .about-container,
   .register-container{
@@ -714,6 +739,37 @@
   .advanced-selects-container,
   .advanced-range-container{
     grid-template-columns: 1fr;
+  }
+  .settings-inputs-container{
+    gap: 10px;
+  }
+  .settings-inputs-container input{
+    padding: 5px;
+    padding-right: 15px;
+  }
+  .settings-selects-container{
+    gap: 10px;
+  }
+  .personally-details{
+    gap: 15px;
+  }
+  .personally-details > div{
+    gap: 5px;
+  }
+  .personally-details img{
+    width: 10px;
+    height: 10px;
+  }
+  .personally-edit img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+  }
+  .personally-edit a{
+    padding: 5px 10px;
+  }
+  .second{
+    margin-right: 30px;
   }
 }
 @media( max-width: 350px){
