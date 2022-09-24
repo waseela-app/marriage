@@ -395,6 +395,7 @@
   .mobile-menu .account{
     display: flex;
   }
+  .contact-container,
   .settings-container,
   .advanced-container,
   .notifications-container,
@@ -409,6 +410,9 @@
   }
   .advanced-bottom{
     margin-left: 5%;
+  }
+  .contact-area > div{
+    gap: 30px;
   }
 }
 @media( max-width: 950px){
@@ -443,6 +447,7 @@
   .search-container h2{
     font-size: 9px;
   }
+  .contact-container a,
   .personally-edit a,
   .advanced-container h3,
   .notifications-container button,
@@ -453,6 +458,9 @@
   .register-container li{
     font-size: 12px;
   }
+  .contact-container input,  
+  .contact-container textarea,  
+  .contact-container button,
   .settings-selects-container input,
   .settings-selects-container h2,
   .settings-selects-container select,
@@ -468,6 +476,7 @@
   .register-container h2{
     font-size: 14px;
   }
+  .contact-container h1,
   .advanced-container h1,
   .notifications-container h1,
   .questions-container h1,
@@ -508,6 +517,7 @@
   .notifications-container{
     width: 95%;
   }
+  .contact-container,
   .settings-container,
   .advanced-container,
   .questions-container,
@@ -545,6 +555,7 @@
   .logo-area h3{
     font-size: 8px;
   }
+  .contact-container a,
   .bottom-links a,
   .social h4,
   .logo-area h2,
@@ -560,6 +571,9 @@
   .profile-top h2{
     font-size: 10px;
   }
+  .contact-container input,  
+  .contact-container textarea,  
+  .contact-container button,
   .settings-selects-container input,
   .settings-selects-container h2,
   .settings-selects-container select,
@@ -582,6 +596,7 @@
   .date-container h1{
     font-size: 14px;
   }
+  .contact-container h1,
   .advanced-container h1,
   .notifications-container h1,
   .questions-container h1,
@@ -770,6 +785,32 @@
   }
   .second{
     margin-right: 30px;
+  }
+  .contact-container{
+    padding: 10px;
+    padding-top: 30px;
+    width: 98%;
+  }
+  .contact-area > div{
+    gap: 15px;
+  }
+  .contact-area input{
+    background-color: #F9F8F9;
+    padding: 5px;
+    border-radius: 30px;
+    padding-right: 10px;
+  }
+  .contact-area textarea,
+  .contact-details{
+    padding: 10px 5px;
+    border-radius: 15px;
+  }
+  .contact-area img{
+    width: 15px;
+    height: 15px;
+  }
+  .contact-container button{
+    padding: 5px;
   }
 }
 @media( max-width: 350px){
