@@ -20,16 +20,18 @@ function mobileMenu(){
 };
 
 document.onclick = function(e){
-
+    
     if (!e.target.classList.contains('fa-bars') && !e.target.classList.contains('mobile-menu')){
         const element = document.querySelector('.mobile-menu');
         element.classList.remove("active-mobile-menu");
     }
     
     if (e.target.id !== 'icon'){
-        document.getElementById('alert').classList.remove("active-notification");
-        document.getElementById('messages').classList.remove("active-notification");
-        document.getElementById('logout').classList.remove("active-notification");
+        if(document.getElementById('alert') || document.getElementById('messages') || document.getElementById('logout')){
+            document.getElementById('alert').classList.remove("active-notification");
+            document.getElementById('messages').classList.remove("active-notification");
+            document.getElementById('logout').classList.remove("active-notification");
+        }
     }
     
     if (e.target.classList.contains('questions-area') || e.target.closest('.questions-area') !== null){
