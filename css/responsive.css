@@ -1191,6 +1191,51 @@
     right: -50px;
     width: 300px;
   }
+  .main-content{
+    align-items: center;
+  }
+  .main-content-headlines div{
+    display: none;
+  }
+  .main-content-user{
+    align-self: center;
+    gap: 10px;
+  }
+  .main-content-numbers{
+    align-self: start;
+    padding-right: 10px;
+  }
+  .main-content-search{
+    padding-inline: 5px;
+  }
+  .main-content-search div{
+    padding-inline: 2px;
+    gap: 3px;
+  }
+  .main-content-search select{
+    padding-inline: 0px;
+    border-left: 0px solid transparent;
+  }
+  .main-content-search img{
+    padding-right: 0px; 
+  }
+  .success-storys{
+    height: 50px;
+    gap: 10px;
+  }
+  .success-storys img{
+    margin-inline: 20px;
+    width: 30px;
+    height: 30px;
+  }
+  .story:not(.active-story){
+    width: 5px;
+    height: 5px;
+  }
+  .active-story{
+    width: 10px;
+    height: 10px;
+  }
 }
 @media( max-width: 350px){
   .search-container{

@@ -19,6 +19,48 @@ function mobileMenu(){
     element.classList.toggle("active-mobile-menu");
 };
 
+function slidRight(){
+
+    const element = document.querySelector('.active-slid');
+    const story = document.querySelector('.active-story');
+    element.classList.remove('active-slid');
+    story.classList.remove('active-story');
+
+    if(element.id == 3){
+        document.getElementById('2').classList.add('active-slid')
+        document.getElementById('story-2').classList.add('active-story')
+    }
+    else if(element.id == 2){
+        document.getElementById('1').classList.add('active-slid');
+        document.getElementById('story-1').classList.add('active-story');
+    }
+    else{
+        document.getElementById('1').classList.add('active-slid');
+        document.getElementById('story-1').classList.add('active-story');
+    }
+}
+
+function slidLeft(){
+
+    const element = document.querySelector('.active-slid');
+    const story = document.querySelector('.active-story');
+    element.classList.remove('active-slid');
+    story.classList.remove('active-story');
+
+    if(element.id == 1){
+        document.getElementById('2').classList.add('active-slid')
+        document.getElementById('story-2').classList.add('active-story')
+    }
+    else if(element.id == 2){
+        document.getElementById('3').classList.add('active-slid');
+        document.getElementById('story-3').classList.add('active-story');
+    }
+    else{
+        document.getElementById('3').classList.add('active-slid');
+        document.getElementById('story-3').classList.add('active-story');
+    }
+}
+
 document.onclick = function(e){
     
     if (!e.target.classList.contains('fa-bars') && !e.target.classList.contains('mobile-menu')){
