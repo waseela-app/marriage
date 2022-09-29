@@ -176,7 +176,6 @@
         </div>
     </div><!-- start body -->
     <div class="messages-container">
-
         <div class="messages-chats-area">
             <a class="bg-white px-5">
                 <h1>الدردشات</h1>
@@ -200,8 +199,13 @@
                 <h2>مصطفى عبد الكريم</h2>
             </a>
         </div>
-
         <div class="messages-texts-area">
+            <div id="mobile-profile" class="profile-img-div" onclick="mobileProfile()">
+                <img id="mobile-profile" src="images/profile.png" alt=""/>
+            </div>
+            <div id="mobile-chats" class="chat-img-div" onclick="mobileChats()">
+                <img id="mobile-chats" src="images/chat.png" alt=""/>
+            </div>
             <div class="text-recieve">
                 <div>
                     <h2>هذا النص هو مثال لنص يمكن أن يستبدل في نفس النص من مولد النص ؟</h2>
@@ -267,7 +271,7 @@
             </div>
         </div>
         <div class="messages-profile-area">
-            <a href="" class="user bg-white shadow-none align-items-center px-0">
+            <a href="" class="user bg-white shadow-none align-items-center px-0 h-auto">
                 <div class="user-profile d-flex flex-column align-items-center">
                     <div class="img-border">
                         <img src="images/man.png" alt=""/>

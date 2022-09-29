@@ -469,8 +469,19 @@
   }
 }
 @media( max-width: 950px){
+  .messages-profile-area h2{
+    font-size: 10px;
+  }
+  .messages-chats-area H2,
+  .messages-chats-area input{
+    font-size: 12px;
+  }
+  .messages-profile-area h1{
+    font-size: 14px;
+  }
   .landing-special h3,
   .landing-about h3,
+  .messages-chats-area H1,
   .landing-about a{
     font-size: 16px;
   }
@@ -525,6 +536,10 @@
   }
   .heart-img{
     right: -30px;
+  }
+  .messages-chats-area img{
+    width: 30px;
+    height: 30px;
   }
 }
 @media( max-width: 840px){
@@ -743,6 +758,38 @@
     width: 400px;
     filter: blur(6px);
     opacity: 40%;
+  }
+  .messages-container{
+    grid-template-columns: 1fr;
+  }
+  .messages-chats-area{
+    position: fixed;
+    height: 100vh;
+    width: 280px;
+    top: 0px;
+    right: 0px;
+    animation: slide-left 500ms forwards;
+    z-index: 1000;
+    border-left: 1px solid #bebebe;
+    display: none;
+  }
+  .messages-profile-area{
+    position: fixed;
+    height: 100vh;
+    width: 280px;
+    top: 0px;
+    right: 0px;
+    animation: slide-left 500ms forwards;
+    z-index: 1000;
+    border-left: 1px solid #bebebe;
+    display: none;
+  }
+  .active-mobile-menu{
+    display: flex;
+  }
+  .chat-img-div,
+  .profile-img-div{
+    display: block;
   }
 }
 @media( max-width: 550px){
@@ -1238,6 +1285,48 @@
   .active-story{
     width: 10px;
     height: 10px;
+  }
+  .messages-texts-area h2{
+    font-size: 14px;
+  }
+  .messages-texts-area{
+    padding-inline: 10px;
+    padding-top: 20px;
+  }
+  .text-recieve{
+    width: 90%;
+  }
+  .text-recieve div:first-child{
+    padding: 10px;
+    padding-right: 30px;
+  }
+  .text-recieve div:nth-child(2){
+    gap: 15px;
+  }
+  .text-send{
+    width: 90%;
+  }
+  .text-send div:first-child{
+    padding: 10px;
+    padding-right: 30px;
+  }
+  .text-reply{
+    border-radius: 20px;
+  }
+  .reply-content{
+    padding: 10px;  
+  }
+  .reply-content div{
+    padding: 10px;
+    border-radius: 15px;
+  }
+  .reply-buttons{
+    gap: 10px;
+    padding: 15px;
+    margin-block: 20px;
+  }
+  .reply-buttons a{
+    font-size: 14px;
   }
 }
 @media( max-width: 350px){

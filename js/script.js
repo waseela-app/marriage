@@ -1,3 +1,18 @@
+function mobileMenu(){
+    const element = document.querySelector('.mobile-menu');
+    element.classList.toggle("active-mobile-menu");
+};
+
+function mobileProfile(){
+    const element = document.querySelector('.messages-profile-area');
+    element.classList.toggle("active-mobile-menu");
+};
+
+function mobileChats(){
+    const element = document.querySelector('.messages-chats-area');
+    element.classList.toggle("active-mobile-menu");
+};
+
 function notification(clicked){
 
     const element = document.getElementById(clicked);
@@ -12,11 +27,6 @@ function notification(clicked){
         });
         element.classList.add("active-notification");
     }
-};
-
-function mobileMenu(){
-    const element = document.querySelector('.mobile-menu');
-    element.classList.toggle("active-mobile-menu");
 };
 
 function slidRight(){
@@ -65,6 +75,16 @@ document.onclick = function(e){
     
     if (!e.target.classList.contains('fa-bars') && !e.target.classList.contains('mobile-menu')){
         const element = document.querySelector('.mobile-menu');
+        element.classList.remove("active-mobile-menu");
+    }
+    
+    if (e.target.id !== "mobile-profile" && !e.target.classList.contains('messages-profile-area')){
+        const element = document.querySelector('.messages-profile-area');
+        element.classList.remove("active-mobile-menu");
+    }
+
+    if (e.target.id !== "mobile-chats" && !e.target.classList.contains('messages-chats-area')){
+        const element = document.querySelector('.messages-chats-area');
         element.classList.remove("active-mobile-menu");
     }
     
