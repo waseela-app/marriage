@@ -75,6 +75,12 @@ a:active,
   border-radius: 50%;
   width: fit-content;
 }
+.img-border-light{
+  border: 2px solid rgb(242, 242, 242);
+  background-color: rgb(242, 242, 242);
+  border-radius: 50%;
+  width: fit-content;
+}
 .blur{
   filter: blur(2px);
 }
@@ -111,7 +117,7 @@ a:active,
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 124px;
+  height: 80px;
   padding-right: 4%;
   padding-left: 6%;
   box-shadow: 0px 6px 12px #0000002a;
@@ -468,7 +474,8 @@ a:active,
   height: 76px;
   border-radius: 50%;
 }
-.user-profile h1{
+.user-profile h1,
+.user h1{
   font-family: Hanimation_Arabic_Medium;
   font-size: 28px;
   color: #221923;
@@ -1552,6 +1559,201 @@ a:active,
   width: 500px;
   filter: blur(6px);
   opacity: 40%;
+}
+.messages-container{
+  width: 100%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 22% 56% 22%;
+  margin-top: 80px;
+}
+.messages-profile-area{
+  background-color: #ffffff;
+}
+.messages-chats-area{
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 40px;
+}
+.messages-chats-area > form, 
+.messages-chats-area > a{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background-color: #F0F0F0;
+  border-radius: 0px 40px 40px 0px;
+  padding-right: 10px;
+  padding-block: 5px;
+  margin-right: 25px;
+}
+.messages-chats-area img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.messages-chats-area h1{
+  font-family: Hanimation_Arabic_Medium;
+  font-size: 22px;
+  color: #221923;
+}
+.messages-chats-area h2,
+.messages-chats-area input{
+  font-family: Hanimation_Arabic_Medium;
+  font-size: 14px;
+  color: #221923;
+}
+.messages-chats-area input{
+  background-color: transparent;
+  margin-right: 20px;
+  width: 50%;
+}
+.messages-texts-area{
+  padding-inline: 20px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #F7F7FA;
+  overflow-y: auto;
+  max-height: 800px;
+  direction: ltr;
+  text-align: right;
+}
+.messages-texts-area h2{
+  font-family: Hanimation_Arabic_Medium;
+  font-size: 14px;
+  margin-left: auto;
+}
+.text-recieve h2,
+.text-send h2{
+  color: #ffffff;
+}
+.text-reply h2{
+  color: #221923;
+}
+.text-recieve{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: auto;
+  position: relative;
+}
+.text-recieve div:first-child{
+  margin-right: 30px;
+  padding: 15px;
+  padding-right: 30px;
+  border-radius: 10px;
+  background-color: #631E73;
+}
+.text-recieve div:nth-child(2){
+  margin-left: 30px;
+  padding: 10px;
+  padding-right: 30px;
+  border-radius: 10px;
+  background-color: #F1BD19;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.dot-img{
+  width: 10px;
+  height: 10px; 
+}
+.plus-img{
+  width: 25px;
+  height: 25px;
+}
+.link-recieve-img,
+.link-send-img{
+  position: absolute;
+  top: 25px;
+  right: 0px;
+  width: 50px;
+}
+.text-send{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: auto;
+  position: relative;
+}
+.text-send div:first-child{
+  margin-left: 30px;
+  padding: 15px;
+  padding-right: 30px;
+  border-radius: 10px;
+  background-color: #F1BD19;
+}
+.text-send div:nth-child(2){
+  margin-right: 30px;
+  padding: 15px;
+  padding-right: 30px;
+  border-radius: 10px;
+  background-color: #631E73;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.text-reply{
+  background-color: #ffffff;
+  padding-top: 20px;
+  border-radius: 30px;
+}
+.reply-content{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  direction: ltr;
+  overflow-y: auto;
+  max-height: 400px;
+  padding-inline: 20px;
+}
+.reply-content > div{
+  background-color: #e2d6e64f;
+  padding: 15px;
+  border: 1px solid #5B2A83;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.reply-content a{
+  background-color: #631E73;
+  color: #ffffff;
+  padding: 2px 15px;
+  border-radius: 20px;  
+  font-family: Hanimation_Arabic_Medium;
+  font-size: 14px;
+  align-self: start;
+}
+.reply-buttons{
+  background-color: #ffffff;
+  border-radius: 50px;
+  padding: 20px;  
+  margin-block: 40px;
+  display: flex;
+  gap: 50px;  
+  box-shadow: 0px 10px 60px #795e8023;
+}
+.reply-buttons a{
+  width: 100%;
+  font-family: Hanimation_Arabic_Medium;
+  font-size: 20px;
+  text-align: center;
+  padding-block: 10px;
+  border-radius: 30px;
+}
+.reply-buttons a:first-child{
+  background-color: #F9F8F9;
+  color: #686868;
+}
+.reply-buttons a:last-child{
+  background-color: #F1BD19;
+  color: white;
 }
 
 @keyframes slide-up {
