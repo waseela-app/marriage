@@ -1681,6 +1681,7 @@ a:active,
 .plus-img{
   width: 25px;
   height: 25px;
+  cursor: pointer;
 }
 .link-recieve-img,
 .link-send-img{
@@ -1755,7 +1756,7 @@ a:active,
   gap: 50px;  
   box-shadow: 0px 10px 60px #795e8023;
 }
-.reply-buttons a{
+.reply-buttons button{
   width: 100%;
   font-family: Hanimation_Arabic_Medium;
   font-size: 20px;
@@ -1767,7 +1768,7 @@ a:active,
   background-color: #F9F8F9;
   color: #686868;
 }
-.reply-buttons a:last-child{
+.reply-buttons button:last-child{
   background-color: #F1BD19;
   color: white;
 }
@@ -1796,12 +1797,14 @@ a:active,
   border-radius: 20px;
   text-align: center;
 }
-.popup-container-answers img,
-.popup-container img{
+.popup-container-answers img{
   width: 20px;
+  cursor: pointer;
 }
-.popup-container a:first-child{
+.popup-container img{
   align-self: start;
+  width: 20px;
+  cursor: pointer;
 }
 .popup-container-answers h1,
 .popup-container h1{
@@ -1855,6 +1858,9 @@ a:active,
   color: #FF7171;
   padding-bottom: 20px;
   padding-right: 10px;
+}
+.popup-container-answers h3{
+  cursor: pointer;
 }
 .popup-container h3{
   align-self: start;
@@ -1915,6 +1921,24 @@ a:active,
   margin: 5px;
   width: fit-content;
   cursor: pointer;
+}
+.hidden{
+  display: none;
+}
+.signup-container{
+  background-color: #ffffff;
+  width: 90%;
+  height: 500px;
+  margin-inline: auto;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.login-container{
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+.login-profile{
+  
 }
 
 @keyframes slide-up {

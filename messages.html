@@ -14,6 +14,77 @@
 </head>
 
 <body>
+    <!-- answer alert -->
+    <form id="answer" class="hidden">
+        <div class="dark-background" style="background-color: #1a215a7f;">
+            <div class="popup-container">
+                <img src="images/close.png" alt="" onclick="hideAlert('answer')"/>
+                <h1>أدخل إجابة مخصصة</h1>
+                <input placeholder="أدخل نص  الااجاب المناسبة"/>
+                <h3>هذه الإجابة سوف تخضع إلى التدقيق من الادرارة</h3>
+                <button type="submit">إرسال</button>
+            </div>
+        </div>
+    </form>
+    <!-- question alert  -->
+    <form id="question" class="hidden">
+        <div class="dark-background" style="background-color: #1a215a7f;">
+            <div class="popup-container">
+                <img src="images/close.png" alt="" onclick="hideAlert('question')"/>
+                <h1>أدخل سؤال مخصصة</h1>
+                <input placeholder="أدخل نص  السؤال المناسب"/>
+                <h3>هذا السؤال  سوف يخضع إلى التدقيق من الادرارة</h3>
+                <button type="submit">إرسال</button>
+            </div>
+        </div>
+    </form>
+    <!-- notification alert  -->
+    <div id="notification" class="dark-background hidden" style="background-color: #1a215a7f;">
+        <div class="popup-container">
+            <img src="images/close.png" alt="" onclick="hideAlert('notification')"/>
+            <h1>ملاحظة</h1>
+            <h2>
+                هذا السؤال لا يزال قيد إنتظار الموافقة من قبل الإدارة 
+                يرجى متابعه الاشعارات خلال الساعات القادمة 
+            </h2>
+            <button onclick="hideAlert('notification')">موافق</button>
+        </div>
+    </div>
+    <!-- answer-select  -->
+    <div id="answerSelect" class="dark-background hidden" style="background-color: transparent;">
+        <div class="popup-container-answers">
+            <div>
+                <img src="images/close.png" alt="" onclick="hideAlert('answerSelect')"/>
+                <h1>إختر الإجابة المناسبة</h1>
+            </div>
+            <section>
+                <ul>
+                    <li id="answer" value="1">موافق</li>
+                    <li id="answer" value="2">غير موافق</li>
+                    <li id="answer" value="3">غير متأكد</li>
+                    <li id="answer" value="4">متأكد</li>
+                    <li id="answer" value="5">ربما</li>
+                    <li id="answer" value="6">أريد</li>
+                    <li id="answer" value="7">لا أريد</li>
+                    <li id="answer" value="8">درجة أولى</li>
+                    <li id="answer" value="9">لم أتمكن من الإجابة</li>
+                    <li id="answer" value="10">لم أتمكن من الإجابة</li>
+                    <li id="answer" value="11">لم أقم بها إطلاقاً</li>
+                    <li id="answer" value="12">غير موافق</li>
+                    <li id="answer" value="13">متأكد</li>
+                    <li id="answer" value="14">لا أريد</li>
+                    <li id="answer" value="15">موافق</li>
+                </ul>
+            </section>
+            <div>
+                <h3 class="p-0" onclick="hideAlert('answerSelect'); showAlert('answer')">هل تريد إرسال رسالة مخصصة ؟؟</h3>
+                <button class="m-0" onclick="showAnswer()">
+                    <img class="plus-img" style="width: 15px; height: 15px; margin-left: 10px;" src="images/plus.png" alt=""/>
+                    إرسال الإجابة
+                </button>
+            </div>
+        </div>
+    </div>
     <div class="header">
         <a href="">
             <div class="logo-area">
@@ -211,9 +282,7 @@
                     <h2>هذا النص هو مثال لنص يمكن أن يستبدل في نفس النص من مولد النص ؟</h2>
                 </div>
                 <div>
-                    <a href="" style="margin-right: auto;">
-                        <img class="plus-img" src="images/plus.png" alt=""/>
-                    </a>
+                    <img class="plus-img" src="images/plus.png" alt="" onclick="showAlert('answerSelect')"/>
                     <h2>هذا النص هو مثال لنص يمكن أن يستبدل في نفس </h2>
                     <img class="dot-img" src="images/dot-white.png" alt=""/>
                 </div>
@@ -233,9 +302,7 @@
                     <h2>هذا النص هو مثال لنص يمكن أن يستبدل في نفس النص من مولد النص ؟</h2>
                 </div>
                 <div>
-                    <a href="" style="margin-right: auto;">
-                        <img class="plus-img" src="images/plus.png" alt=""/>
-                    </a>
+                    <img class="plus-img" src="images/plus.png" alt="" onclick="showAlert('answerSelect')"/>
                     <h2>يرجى تحديد الإجابة المناسبة</h2>
                 </div>
                 <img class="link-recieve-img" src="images/link-recieve.png" alt=""/>
@@ -265,8 +332,8 @@
                     </div>
                 </div>
                 <div class="reply-buttons">
-                    <a href="">أضف سؤال مخصص</a>
-                    <a href="">حدد سؤال</a>
+                    <button onclick="showAlert('question')">أضف سؤال مخصص</button>
+                    <button onclick="showAlert('notification')">حدد سؤال</button>
                 </div>
             </div>
         </div>

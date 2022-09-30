@@ -1,7 +1,15 @@
 var answer = null;
 
+function hideAlert(alert){
+    document.getElementById(alert).classList.add('hidden');
+}
+
 function showAnswer(){
     console.log(answer)
+}
+
+function showAlert(alert){
+    document.getElementById(alert).classList.remove('hidden');
 }
 
 function mobileMenu(){
