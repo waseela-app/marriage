@@ -1796,23 +1796,31 @@ a:active,
   border-radius: 20px;
   text-align: center;
 }
+.popup-container-answers img,
 .popup-container img{
   width: 20px;
 }
 .popup-container a:first-child{
   align-self: start;
 }
+.popup-container-answers h1,
 .popup-container h1{
   font-family: Hanimation_Arabic_Medium;
   font-size: 26px;
   color: #221923;
 }
+.popup-container-answers h1{
+  align-self: center;
+  width: 100%;
+}
+.popup-container-answers h2,
 .popup-container h2{
   font-family: Hanimation_Arabic_Regular;
   font-size: 18px;
   color: #221923;
   padding: 30px 20px; 
 }
+.popup-container-answers button,
 .popup-container button{
   background-color: #1A225A;
   color: #ffffff;
@@ -1822,7 +1830,11 @@ a:active,
   font-family: Hanimation_Arabic_Medium;
   font-size: 16px;
   margin-bottom: 10px;
-  box-shadow: 0px 24px 48px #2c27383b;
+  box-shadow: 0px 24px 48px #2c273829;
+}
+.popup-container-answers button{
+  width: fit-content;
+  padding-inline: 30px;
 }
 .popup-container input{
   font-family: Hanimation_Arabic_Medium;
@@ -1836,13 +1848,73 @@ a:active,
   border: 1px solid #691E75;
   border-radius: 10px;
 }
+.popup-container-answers h3,
 .popup-container h3{
   font-family: Hanimation_Arabic_Medium;
   font-size: 14px;
   color: #FF7171;
   padding-bottom: 20px;
-  align-self: start;
   padding-right: 10px;
+}
+.popup-container h3{
+  align-self: start;
+}
+.popup-container-answers{
+  background-color: white;
+  width:50%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid #1A225A;
+}
+.popup-container-answers > div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  width: 100%;
+  padding-block: 20px;
+  padding-right: 20px;
+}
+.popup-container-answers section{
+  overflow-y: auto;
+  max-height: 220px;
+  direction: ltr;
+  padding-right: 15px;
+  margin-right: 5px;
+}
+.popup-container-answers ul{
+  list-style: none;
+  padding-block: 20px;
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  direction: rtl;
+}
+.popup-container-answers ul li:not(.active-answer){
+  background-color: #631E73;
+  color: #ffffff;
+  font-family: Hanimation_Arabic_Medium;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin: 5px;
+  width: fit-content;
+  cursor: pointer;
+}
+.active-answer{
+  background-color: #F3CA4A;
+  color: #ffffff;
+  font-family: Hanimation_Arabic_Medium;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin: 5px;
+  width: fit-content;
+  cursor: pointer;
 }
 
 @keyframes slide-up {

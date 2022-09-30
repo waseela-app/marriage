@@ -1,3 +1,9 @@
+var answer = null;
+
+function showAnswer(){
+    console.log(answer)
+}
+
 function mobileMenu(){
     const element = document.querySelector('.mobile-menu');
     element.classList.toggle("active-mobile-menu");
@@ -72,6 +78,15 @@ function slidLeft(){
 }
 
 document.onclick = function(e){
+
+    if (e.target.id == 'answer'){
+        answer = e.target.value;
+        const data = document.querySelectorAll('#answer');
+        data.forEach( item => {
+            item.classList.remove("active-answer");
+        });
+        e.target.classList.add('active-answer')
+    }
     
     if (!e.target.classList.contains('fa-bars') && !e.target.classList.contains('mobile-menu')){
         const element = document.querySelector('.mobile-menu');

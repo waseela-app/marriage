@@ -473,6 +473,9 @@
   .popup-container{
     width: 40%;
   }
+  .popup-container-answers{
+    width:60%;
+  }
 }
 @media( max-width: 950px){
   .messages-profile-area h2{
@@ -799,6 +802,9 @@
   }
   .popup-container{
     width: 50%;
+  }
+  .popup-container-answers{
+    width: 80%;
   }
 }
 @media( max-width: 550px){
@@ -1348,6 +1354,11 @@
   .popup-container{
     width: 60%;
   }
+  .popup-container-answers{
+    width: 90%;
+    padding-left: 10px;  
+  }
+  .popup-container-answers h1,
   .popup-container h1{
     font-size: 20px;
   }
@@ -1355,8 +1366,15 @@
     font-size: 14px;
     padding: 20px 10px; 
   }
+  .popup-container-answers h3{
+    font-size: 12px;
+  }
   .popup-container h3{
     font-size: 10px;
+  }
+  .popup-container-answers button{
+    font-size: 12px;
+    padding-inline: 20px;
   }
   .popup-container button{
     font-size: 14px;
@@ -1364,6 +1382,22 @@
   .popup-container img{
     width: 15px;
     margin-bottom: 20px;
+  }
+  .popup-container-answers ul{
+    padding-block: 0px;
+  }
+  .popup-container-answers ul li:not(.active-answer){
+    font-size: 12px;
+    padding: 5px 10px;
+    margin: 3px;
+  }
+  .active-answer{
+    font-size: 12px;
+    padding: 5px 10px;
+    margin: 3px;
+  }
+  .popup-container-answers img{
+    width: 10px;
   }
 }
 @media( max-width: 350px){
