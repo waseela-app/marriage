@@ -388,6 +388,9 @@
   .account{
     display: none;
   }
+  .bottom{
+    padding-block: 40px;
+  }
   .bottom > div{
     width: 100%;
     flex-direction: column;
@@ -466,6 +469,9 @@
     left: 100px;
     width: 250px;
     height: 200px;
+  }
+  .popup-container{
+    width: 40%;
   }
 }
 @media( max-width: 950px){
@@ -791,6 +797,9 @@
   .profile-img-div{
     display: block;
   }
+  .popup-container{
+    width: 50%;
+  }
 }
 @media( max-width: 550px){
   .profile-top h3,
@@ -953,12 +962,20 @@
     padding: 10px 10px;
     border-radius: 5px;
   }
+  .bottom{
+    padding-block: 40px;
+  }
+  .bottom > div{
+    gap: 20px;
+  }
   .bottom-logo img{
     width: 40px;
     height: 50px;
   }
   .bottom-logo{
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     gap: 30px;
   }
   .bottom-links{
@@ -1328,9 +1345,32 @@
   .reply-buttons a{
     font-size: 14px;
   }
+  .popup-container{
+    width: 60%;
+  }
+  .popup-container h1{
+    font-size: 20px;
+  }
+  .popup-container h2{
+    font-size: 14px;
+    padding: 20px 10px; 
+  }
+  .popup-container h3{
+    font-size: 10px;
+  }
+  .popup-container button{
+    font-size: 14px;
+  }
+  .popup-container img{
+    width: 15px;
+    margin-bottom: 20px;
+  }
 }
 @media( max-width: 350px){
   .search-container{
     display: none;
+  }
+  .popup-container{
+    width: 70%;
   }
 }

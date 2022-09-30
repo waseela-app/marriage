@@ -1559,7 +1559,7 @@ a:active,
 }
 .messages-container{
   width: 100%;
-  height: 550px;
+  height: 700px;
   display: grid;
   grid-template-columns: 22% 56% 22%;
   margin-top: 80px;
@@ -1610,7 +1610,7 @@ a:active,
 }
 .messages-texts-area{
   padding-inline: 20px;
-  padding-top: 30px;
+  padding-block: 30px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -1624,8 +1624,8 @@ a:active,
   position: fixed;
   top: 100px;
   left: 0px;
-  background-color: white;
-  padding: 10px;
+  background-color: rgb(227, 227, 227);
+  padding: 5px;
   border-radius: 0px 20px 20px 0px;
   z-index: 100;
   display: none;
@@ -1635,7 +1635,7 @@ a:active,
 }
 .profile-img-div img,
 .chat-img-div img{
-  width: 30px;
+  width: 20px;
 }
 .messages-texts-area h2{
   font-family: Hanimation_Arabic_Medium;
@@ -1773,6 +1773,76 @@ a:active,
 }
 .active-mobile-menu{
   display: flex;
+}
+.dark-background{
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: #00000096;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+}
+.popup-container{
+  background-color: white;
+  width: 30%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+.popup-container img{
+  width: 20px;
+}
+.popup-container a:first-child{
+  align-self: start;
+}
+.popup-container h1{
+  font-family: Hanimation_Arabic_Medium;
+  font-size: 26px;
+  color: #221923;
+}
+.popup-container h2{
+  font-family: Hanimation_Arabic_Regular;
+  font-size: 18px;
+  color: #221923;
+  padding: 30px 20px; 
+}
+.popup-container button{
+  background-color: #1A225A;
+  color: #ffffff;
+  padding: 5px;
+  width: 60%;
+  border-radius: 30px;
+  font-family: Hanimation_Arabic_Medium;
+  font-size: 16px;
+  margin-bottom: 10px;
+  box-shadow: 0px 24px 48px #2c27383b;
+}
+.popup-container input{
+  font-family: Hanimation_Arabic_Medium;
+  font-size: 14px;
+  color: #221923;
+  background-color: #e2d6e63e;
+  padding: 10px; 
+  padding-bottom: 70px;
+  width: 100%;
+  margin-block: 20px;
+  border: 1px solid #691E75;
+  border-radius: 10px;
+}
+.popup-container h3{
+  font-family: Hanimation_Arabic_Medium;
+  font-size: 14px;
+  color: #FF7171;
+  padding-bottom: 20px;
+  align-self: start;
+  padding-right: 10px;
 }
 
 @keyframes slide-up {
