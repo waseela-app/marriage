@@ -1559,7 +1559,7 @@ a:active,
 }
 .messages-container{
   width: 100%;
-  height: 700px;
+  /* height: 700px; */
   display: grid;
   grid-template-columns: 22% 56% 22%;
   margin-top: 80px;
@@ -1609,15 +1609,20 @@ a:active,
   width: 50%;
 }
 .messages-texts-area{
-  padding-inline: 20px;
-  padding-block: 30px;
+  background-color: #F7F7FA;
+  direction: ltr;
+  text-align: right;
+}
+.texts-container{
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   gap: 30px;
-  background-color: #F7F7FA;
-  overflow-y: auto;
-  direction: ltr;
-  text-align: right;
+  max-height: 300px;
+  margin-right: 5px;
+  padding-right: 15px;
+  padding-left: 20px;
+  margin-top: 30px;
 }
 .chat-img-div,
 .profile-img-div{
@@ -1717,8 +1722,10 @@ a:active,
 }
 .text-reply{
   background-color: #ffffff;
-  padding-top: 20px;
+  padding-block:20px;
   border-radius: 30px;
+  margin-inline: 20px;
+  margin-bottom: 30px;
 }
 .reply-content{
   display: flex;
@@ -1751,7 +1758,7 @@ a:active,
   background-color: #ffffff;
   border-radius: 50px;
   padding: 20px;  
-  margin-block: 40px;
+  margin-top: 30px;
   display: flex;
   gap: 50px;  
   box-shadow: 0px 10px 60px #795e8023;
@@ -1776,15 +1783,17 @@ a:active,
   display: flex;
 }
 .dark-background{
-  position: fixed;
+  position: absolute;
   top: 0px;
-  bottom: 0px;
+  height: fit-content;
   left: 0px;
-  right: 0px;
+  min-height: 100vh;
+  width: 100%;
   background-color: #00000096;
   z-index: 999;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .popup-container{
   background-color: white;
@@ -1928,17 +1937,111 @@ a:active,
 .signup-container{
   background-color: #ffffff;
   width: 90%;
-  height: 500px;
-  margin-inline: auto;
   border-radius: 30px;
   overflow: hidden;
+  background-color: transparent;
 }
 .login-container{
   display: grid;
   grid-template-columns: 60% 40%;
+  height: 100%;
+  position: relative;
 }
 .login-profile{
-  
+  background:linear-gradient(.25turn,#1A225A,#691E75,#691E75);
+  display: flex;
+  flex-direction: column;
+}
+.login-profile h1{
+  font-family: Hanimation_Arabic_SemiBold;
+  padding: 50px 100px;
+  font-size: 40px;
+  color: #ffffff;
+  padding-bottom: 30px;
+}
+.login-profile h2{
+  font-family: Hanimation_Arabic_Regular;
+  font-size: 16px;
+  color: #ffffff;
+  padding-right: 100px;
+}
+.cubble-img{
+  position: absolute;
+  left: 45%;
+  bottom: 0px;  
+  width: 250px;
+}
+.like-img{
+  width: 40px;
+  position: absolute;
+  bottom: 230px;
+  left: 45%;
+  margin-left: 40px;
+}
+.love-img{
+  width: 30px;
+  position: absolute;
+  bottom: 240px;
+  left: 45%;
+  margin-left: 180px;
+}
+.login-container form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #FCFCFC;
+  padding: 40px 80px;
+}
+.login-container form h1{
+  font-family: Hanimation_Arabic_SemiBold;
+  font-size: 22px;
+  color: #631E73;
+  align-self: center;
+  padding-bottom: 30px;
+}
+.login-container form h2{
+  font-family: Hanimation_Arabic_Medium;
+  font-size: 16px;
+  color: #221923;
+}
+.login-container h3{
+  font-family: Hanimation_Arabic_Medium;
+  font-size: 14px;
+  color: #221923;
+  padding-bottom: 20px;
+} 
+.login-container input{
+  padding: 10px;
+  padding-right: 30px;
+  border-radius: 30px;
+}
+.login-container input::placeholder{
+  font-family: Hanimation_Arabic_Medium;
+  font-size: 16px;
+  color: #ACACAC;
+}
+.login-container button{
+  font-family: Hanimation_Arabic_Medium;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #631E73;
+  padding-block: 10px;
+  border-radius: 30px;
+}
+.login-container form > div{
+  display: flex;
+  justify-content: space-between;
+}
+.login-container form > div a:first-child{
+  font-family: Hanimation_Arabic_Medium;
+  font-size: 14px;
+  color: #1A225A;
+  text-decoration: underline;
+}
+.login-container form > div a:last-child{
+  font-family: Hanimation_Arabic_Medium;
+  font-size: 14px;
+  color: #F1BD19;
 }
 
 @keyframes slide-up {

@@ -476,6 +476,19 @@
   .popup-container-answers{
     width:60%;
   }
+  .login-profile h1{
+    padding: 50px 50px;
+  }
+  .login-profile h2{
+    padding-right: 50px;
+  }
+  .login-container form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #FCFCFC;
+    padding: 40px 40px;
+  }
 }
 @media( max-width: 950px){
   .messages-profile-area h2{
@@ -606,6 +619,39 @@
   .landing-special-image{
     width: 100px;
     height: 100px;
+  }
+  .signup-container{
+    margin-block: 50px;
+  }
+  .login-container{
+    grid-template-columns: 100%;
+  }
+  .login-container form{
+    grid-row-start: 1;
+  }
+  .login-profile{
+    text-align: center;
+  }
+  .login-profile h1{
+    padding: 50px 0px;
+  }
+  .login-profile h2{
+    padding-right: 0px;
+    padding-bottom: 330px;
+  }
+  .cubble-img{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .like-img{
+    left: 50%;
+    transform: translateX(-220%);
+    margin: 0px;
+  }
+  .love-img{
+    left: 50%;
+    transform: translateX(200%);
+    margin: 0px;
   }
 }
 @media( max-width: 800px){
@@ -1309,12 +1355,25 @@
     width: 10px;
     height: 10px;
   }
+  .texts-container{
+    gap: 15px;
+    margin-right: 5px;
+    padding-right: 5px;
+    padding-left: 10px;
+    margin-top: 10px;
+  }
+  .text-reply{
+    padding-block:10px;
+    margin-inline: 10px;
+    margin-bottom: 10px;
+  }
+  .reply-content{
+    gap: 10px;
+    direction: ltr;
+    overflow-y: auto;
+  }
   .messages-texts-area h2{
     font-size: 14px;
-  }
-  .messages-texts-area{
-    padding-inline: 10px;
-    padding-top: 20px;
   }
   .text-recieve{
     width: 90%;
@@ -1344,11 +1403,11 @@
     border-radius: 15px;
   }
   .reply-buttons{
-    gap: 10px;
-    padding: 15px;
-    margin-block: 20px;
+    padding: 15px;  
+    margin-top: 10px;
+    gap: 20px;  
   }
-  .reply-buttons a{
+  .reply-buttons button{
     font-size: 14px;
   }
   .popup-container{
@@ -1398,6 +1457,33 @@
   }
   .popup-container-answers img{
     width: 10px;
+  }
+  .login-container form h1{
+    font-size: 18px;
+  }
+  .login-container form h2{
+    font-size: 14px;
+  }
+  .login-container h3{
+    font-size: 12px;
+  }
+  .login-container input::placeholder{
+    font-size: 12px;
+  }
+  .login-container button{
+    font-size: 14px;
+  }
+  .login-container form > div a:first-child{
+    font-size: 12px;
+  }
+  .login-container form > div a:last-child{
+    font-size: 12px;
+  }
+  .login-profile h1{
+    font-size: 26px;
+  }
+  .login-profile h2{
+    font-size: 14px;
   }
 }
 @media( max-width: 350px){
