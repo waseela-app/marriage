@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Waseela</title>
+	<link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="dark-background">
+        <div class="signup-container">
+            <div>
+                <div class="signup-steps">
+                    <h2 style="color: #631E73;">تحديد نوع الحساب</h2>
+                    <h2>معلومات أساسيه</h2>
+                    <h2>بيانات شخصيه</h2>
+                    <h2>التعهد</h2>
+                </div>
+                <div class="signup-progress">
+                    <div class="active-progress">1</div>
+                    <section class="progress-one"></section>            
+                    <div>2</div>
+                    <section class="progress-two"></section>            
+                    <div>3</div>
+                    <section class="progress-three"></section>            
+                    <div>4</div>
+                </div>
+            </div>
+            <div class="signup-content">
+                <div>
+                    <h2>أختر نوع الحساب</h2>
+                    <ul>
+                        <li id="account" value="1" class="signup-active-answer">فرد</li>
+                        <li id="account" value="2">وسيط</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>الجنس</h2>
+                    <ul>
+                        <li id="gender" value="1" class="signup-active-answer">ذكر</li>
+                        <li id="gender" value="2">أنثى</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="signup-navigate">
+                <button onclick="showSignupOneAnswer()">التالي</button>
+            </div>
+        </div>
+    </div>
+	<script src="js/script.js"></script>
+</body>
+</html>	

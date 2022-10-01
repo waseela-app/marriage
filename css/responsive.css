@@ -483,11 +483,11 @@
     padding-right: 50px;
   }
   .login-container form{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    background-color: #FCFCFC;
     padding: 40px 40px;
+  }
+  .signup-container{
+    width: 90%;
+    padding: 50px 30px;
   }
 }
 @media( max-width: 950px){
@@ -620,11 +620,9 @@
     width: 100px;
     height: 100px;
   }
-  .signup-container{
-    margin-block: 50px;
-  }
   .login-container{
     grid-template-columns: 100%;
+    margin-block: 50px;
   }
   .login-container form{
     grid-row-start: 1;
@@ -672,7 +670,8 @@
   .landing-register h3,
   .landing-register li,
   .register-container h3,
-  .register-container li{
+  .register-container li,
+  .signup-promise a{
     font-size: 12px;
   }
   .landing-special h2,
@@ -851,6 +850,29 @@
   }
   .popup-container-answers{
     width: 80%;
+  }
+  .signup-container{
+    width: 90%;
+    padding: 50px 0px;
+    padding-right: 10px;
+  }
+  .signup-container h2,
+  .signup-progress div,
+  .signup-progress div:not(.active-progress),
+  .signup-content li,
+  .signup-navigate button,
+  .signup-back-button{
+    font-size: 16px;
+  }
+  .signup-content input{
+    padding-inline: 20px;
+    margin-left: 30px;
+    font-size: 14px;
+  }
+  .signup-content select{
+    padding-right: 20px;
+    margin-left: 30px;
+    font-size: 14px;
   }
 }
 @media( max-width: 550px){
@@ -1484,6 +1506,37 @@
   }
   .login-profile h2{
     font-size: 14px;
+  }
+  .signup-container{
+    width: 95%;
+    padding: 50px 0px;
+    padding-right: 10px;
+  }
+  .signup-container h2,
+  .signup-progress div,
+  .signup-progress div:not(.active-progress),
+  .signup-content li,
+  .signup-navigate button,
+  .signup-back-button{
+    font-size: 12px;
+  }
+  .signup-navigate button,
+  .signup-back-button{
+    padding: 8px 40px;
+    margin-right: 20px;
+  }
+  .signup-content input{
+    margin-left: 0px;
+    font-size: 12px;
+    width: 90%;
+  }
+  .signup-content select{
+    width: 90%;
+    margin-left: 0px;
+    font-size: 12px;
+  }
+  .signup-promise h2{
+    font-size: 16px;
   }
 }
 @media( max-width: 350px){

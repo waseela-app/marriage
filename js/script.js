@@ -1,11 +1,18 @@
 var answer = null;
-
-function hideAlert(alert){
-    document.getElementById(alert).classList.add('hidden');
-}
+var account = null;
+var gender = null;
 
 function showAnswer(){
     console.log(answer)
+}
+
+function showSignupOneAnswer(){
+    console.log(account)
+    console.log(gender)
+}
+
+function hideAlert(alert){
+    document.getElementById(alert).classList.add('hidden');
 }
 
 function showAlert(alert){
@@ -95,20 +102,44 @@ document.onclick = function(e){
         });
         e.target.classList.add('active-answer')
     }
+
+    if (e.target.id == 'account'){
+        account = e.target.value;
+        const data = document.querySelectorAll('#account');
+        data.forEach( item => {
+            item.classList.remove("signup-active-answer");
+        });
+        e.target.classList.add('signup-active-answer')
+    }
+
+    if (e.target.id == 'gender'){
+        gender = e.target.value;
+        const data = document.querySelectorAll('#gender');
+        data.forEach( item => {
+            item.classList.remove("signup-active-answer");
+        });
+        e.target.classList.add('signup-active-answer')
+    }
     
     if (!e.target.classList.contains('fa-bars') && !e.target.classList.contains('mobile-menu')){
-        const element = document.querySelector('.mobile-menu');
-        element.classList.remove("active-mobile-menu");
+        if (document.querySelector('.mobile-menu')){
+            const element = document.querySelector('.mobile-menu');
+            element.classList.remove("active-mobile-menu");
+        }
     }
     
     if (e.target.id !== "mobile-profile" && !e.target.classList.contains('messages-profile-area')){
-        const element = document.querySelector('.messages-profile-area');
-        element.classList.remove("active-mobile-menu");
+        if (document.querySelector('.messages-profile-area')){
+            const element = document.querySelector('.messages-profile-area');
+            element.classList.remove("active-mobile-menu");
+        }
     }
 
     if (e.target.id !== "mobile-chats" && !e.target.classList.contains('messages-chats-area')){
-        const element = document.querySelector('.messages-chats-area');
-        element.classList.remove("active-mobile-menu");
+        if (document.querySelector('.messages-chats-area')){
+            const element = document.querySelector('.messages-chats-area');
+            element.classList.remove("active-mobile-menu");
+        }
     }
     
     if (e.target.id !== 'icon'){

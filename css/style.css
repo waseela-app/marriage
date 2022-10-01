@@ -402,7 +402,8 @@ a:active,
 }
 .profile-selects-container option,
 .advanced-container option,
-.search-container option{
+.search-container option,
+.signup-content option{
   font-size: 19px;
 }
 .search-container h2, 
@@ -1934,18 +1935,15 @@ a:active,
 .hidden{
   display: none;
 }
-.signup-container{
-  background-color: #ffffff;
-  width: 90%;
-  border-radius: 30px;
-  overflow: hidden;
-  background-color: transparent;
-}
 .login-container{
   display: grid;
   grid-template-columns: 60% 40%;
   height: 100%;
   position: relative;
+  width: 90%;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: transparent;
 }
 .login-profile{
   background:linear-gradient(.25turn,#1A225A,#691E75,#691E75);
@@ -2042,6 +2040,176 @@ a:active,
   font-family: Hanimation_Arabic_Medium;
   font-size: 14px;
   color: #F1BD19;
+}
+.signup-container{
+  width: 80%;
+  height: 500px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  z-index: 5;
+}
+.signup-steps{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+}
+.signup-container h2{
+  font-family: Hanimation_Arabic_Medium;
+  font-size: 20px;
+  color: #221923;
+}
+.signup-progress{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 10px;
+  position: relative;
+}
+.signup-progress div{
+  margin-inline: auto;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.signup-progress div:not(.active-progress){
+  background-color: #F3F3F3;
+  font-family: Hanimation_Arabic_Medium;
+  font-size: 20px;
+  color: #221923;
+}
+.progress-one,
+.progress-two,
+.progress-three{
+  background-color: #F3F3F3;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  height: 5px;
+  z-index: -1;
+}
+.progress-one{
+  left: 75%;
+}
+.progress-two{
+  left: 50%;
+}
+.progress-three{
+  left: 25%;
+}
+.active-progress{
+  background-color: #631E73;
+  color: #ffffff;
+  font-family: Hanimation_Arabic_Medium;
+  font-size: 20px;
+}
+.signup-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90%;
+  margin-inline: auto;
+}
+.signup-content > div{
+  width: 90%;
+}
+.signup-content ul{
+  border-radius: 30px;
+  overflow: hidden;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  background-color: #F0F0F0;
+}
+.signup-content li{
+  width: 100%;
+  text-align: center;
+  font-family: Hanimation_Arabic_Medium;
+  font-size: 20px;
+  padding-block: 8px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.signup-active-answer{
+  background-color: #631E73;
+  color: #ffffff;
+}
+.signup-navigate{
+  display: flex;
+  justify-content: left;
+  width: 82%;
+  margin-inline: auto;
+}
+.signup-navigate button{
+  background-color: #1A225A;
+  font-family: Hanimation_Arabic_Medium;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 8px 80px;
+  border-radius: 30px;
+  margin-right: 50px;
+}
+.signup-back-button{
+  background-color: #ffffff;
+  font-family: Hanimation_Arabic_Medium;
+  font-size: 20px;
+  color: #1A225A;
+  padding: 8px 80px;
+  border-radius: 30px;
+  border: 1px solid #1A225A;
+}
+.signup-content input{
+  background-color: #F0F0F0;
+  padding-block: 10px;
+  padding-inline: 30px;
+  margin-block: 10px;
+  border-radius: 30px;
+  margin-left: 35px;
+  font-family: Hanimation_Arabic_Medium;
+  font-size: 20px;
+  color: #ACACAC;
+}
+.signup-content input::placeholder{
+  color: #ACACAC;
+}
+.signup-content select{
+  background-color: #F0F0F0;
+  padding-block: 10px;
+  padding-right: 30px;
+  border-left: 20px solid #F0F0F0;
+  margin-block: 10px;
+  border-radius: 30px;
+  margin-left: 35px;
+  font-family: Hanimation_Arabic_Medium;
+  font-size: 20px;
+  color: #ACACAC;
+}
+.signup-promise{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-top: 20px;
+  text-align: center;
+}
+.signup-promise a{
+  background-color: #1A225A;
+  color: #ffffff;
+  padding: 8px 50px;
+  border-radius: 30px;
+  font-family: Hanimation_Arabic_Medium;
+  font-size: 16px;
+  box-shadow: 0px 24px 48px #2c273823;
 }
 
 @keyframes slide-up {
