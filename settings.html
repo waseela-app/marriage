@@ -177,8 +177,10 @@
     </div><!-- start body -->
     <form>
         <div class="settings-container">
-            <div class="img-border mx-auto">
-                <img src="images/man.png" alt=""/>
+            <div class="img-border mx-auto position-relative">
+                <input id="file-img" type="file" onchange="changeImg(event)"/>
+                <div class="change-img">تغيير الصورة</div>
+                <img id="profile-img" src="images/man.png" alt=""/>
             </div>
             <div class="settings-inputs-container">
                 <input placeholder="الاسم الاول"/>

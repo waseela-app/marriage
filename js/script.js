@@ -19,6 +19,11 @@ function showAlert(alert){
     document.getElementById(alert).classList.remove('hidden');
 }
 
+function changeImg(e){
+    var img = document.getElementById('profile-img');
+    img.src = URL.createObjectURL(e.target.files[0]);
+};
+
 function mobileMenu(){
     const element = document.querySelector('.mobile-menu');
     element.classList.toggle("active-mobile-menu");

@@ -638,15 +638,19 @@
     padding-bottom: 330px;
   }
   .cubble-img{
+    bottom: -520px;
     left: 50%;
+    transform: translateY(-50%);  
     transform: translateX(-50%);
   }
   .like-img{
+    bottom: -280px;
     left: 50%;
     transform: translateX(-220%);
     margin: 0px;
   }
   .love-img{
+    bottom: -280px;
     left: 50%;
     transform: translateX(200%);
     margin: 0px;
@@ -671,7 +675,7 @@
   .landing-register li,
   .register-container h3,
   .register-container li,
-  .signup-promise a{
+  .signup-promise button{
     font-size: 12px;
   }
   .landing-special h2,
@@ -860,7 +864,7 @@
   .signup-progress div,
   .signup-progress div:not(.active-progress),
   .signup-content li,
-  .signup-navigate button,
+  .signup-next-button,
   .signup-back-button{
     font-size: 16px;
   }
@@ -1515,13 +1519,12 @@
   .signup-container h2,
   .signup-progress div,
   .signup-progress div:not(.active-progress),
-  .signup-content li,
-  .signup-navigate button,
-  .signup-back-button{
+  .signup-content li{
     font-size: 12px;
   }
-  .signup-navigate button,
+  .signup-next-button,
   .signup-back-button{
+    font-size: 12px;
     padding: 8px 40px;
     margin-right: 20px;
   }
